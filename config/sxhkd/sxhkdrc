@@ -1,0 +1,47 @@
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# Audiocontrol
+XF86Audio{Raise,Lower}Volume
+	pactl set-sink-volume combined {+10%,-10%} && pkill -RTMIN+11 dwmblocks
+
+XF86Audio{Mute,Mute}
+	pactl set-sink-volume combined {100%,0%} && pkill -RTMIN+11 dwmblocks
+
+XF86Audio{Next,Prev}
+	playerctl {next,previous} && pkill -RTMIN+14 dwmblocks
+
+XF86Audio{Pause,Play}
+	playerctl play-pause && pkill -RTMIN+14 dwmblocks
+
+# Screenshot
+super + shift + p
+	scrot '%d-%m-%Y-%s_$wx$h.png' -e 'mv $f /home/adrian/Pictures/Screenshots/'
+
+# Powermenu
+super + ctrl + p
+	/home/adrian/scripts/dmenu_scripts/dmenu_pwrmnu.sh
+
+# scripts
+super + ctrl + c
+	/home/adrian/scripts/dmenu_scripts/dmenu_config.sh
+
+XF86Search
+	/home/adrian/scripts/dmenu_scripts/websearch.sh
+
+super + ctrl + r
+	/home/adrian/scripts/dmenu_scripts/dmenu_ytdl.sh
+
+super + ctrl + e
+	/home/adrian/scripts/dmenu_scripts/dmenu_emoji.sh
+
+super + ctrl + a
+	/home/adrian/scripts/dmenu_scripts/audiocontrol.sh
+
+super + shift + e
+	/home/adrian/scripts/dmenu_scripts/dmenu_emoji.sh test
+
+# start programs
+super + shift + b
+	waterfox-current

@@ -1,0 +1,20 @@
+#!/bin/sh
+storage="/home/adrian/scripts/todo"
+
+task=$(dmenu -i -p "Add Task" -c -l 10 < $storage)
+inputleng=$(echo $task | wc -m)
+
+if [ $inputleng -gt "1" ]; then
+	if [[ $(grep "$task" "$storage" | wc -l) > "0" ]]; then
+		linelinenum=$(grep "$task" "$storage" | head -n1)
+		linenum=${linelinenum%% *}
+		exactl=$(echo $linenum | tr -d ":")
+		exactl1=$((exactl+1))
+		sed -i "${exactl1} d" "$storage"
+	else
+		line=$(wc -l $storage)
+		echo "${line%% *}: $task" >> "$storage"
+	fi
+else
+	exit 1
+fi

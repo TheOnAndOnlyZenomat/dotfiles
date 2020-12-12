@@ -1,0 +1,21 @@
+#!/bin/sh
+hsetroot -solid \#1c1e30
+/usr/bin/unclutter -b &
+#picom -b
+dunst &
+redshift-gtk -l 51.33962:12.37129 &
+xmodmap -e "keycode 133 = Caps_Lock"
+setxkbmap -option caps:super
+DESKTOP_SESSION="dwm"
+
+if [ "$DESKTOP_SESSION" == "dwm" ]; then
+	sxhkd &
+	pkill -RTMIN+15 dwmblocks
+	if [ $(pgrep dwmblocks) > /dev/null ];then
+		killall dwmblocks
+	fi
+	dwmblocks &
+
+elif [ "$DESKTOP_SESSION" == "bspwm" ]; then
+	sxhkd -c /home/adrian/.config/sxhkd/bspwmrc &
+fi

@@ -1,0 +1,37 @@
+#!/bin/sh
+
+mirrorlist="https://www.archlinux.org/mirrorlist/?country=DE&protocol=https&ip_version=4&ip_version=6"
+cache="/home/adrian/.cache"
+
+curl -o "/etc/pacman.d/mirrorlist" "$mirrorlist" 1>/dev/zero
+result1="$?"
+sed -e 's/#//g' '/etc/pacman.d/mirrorlist' -i 1>/dev/zero
+result5="$?"
+sed -e '1,6d' '/etc/pacman.d/mirrorlist' -i 1>/dev/zero
+result6="$?"
+pacman -Syy 1>/dev/zero
+result2="$?"
+paccache -r 1>/dev/zero
+result3="$?"
+
+rm -rf "$cache/*" 1>/dev/zero
+result4="$?"
+
+if [[ "$result1" -gt "0" || "$result2" -gt "0" || "$result3" -gt "0" || "$result4" -gt "0" || "$result5" -gt "0" || "$result6" -gt "0" ]]; then
+	echo ""
+	echo ""
+	echo "===================="
+	echo "== Errors occured =="
+	echo "==  Check output  =="
+	echo "===================="
+
+	exit 1
+else
+	echo ""
+	echo ""
+	echo "==================="
+	echo "==  Successfull  =="
+	echo "==   Operation   =="
+	echo "==================="
+	exit 0
+fi

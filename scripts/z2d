@@ -1,0 +1,23 @@
+#!/bin/sh
+#########################################################################
+## Be extremly carefull with this script. It will overwrite everything ##
+## 		on every drive with random data 7 times!!	       ##
+#########################################################################
+
+echo ""
+echo ""
+echo "######################################################################################################"
+echo "## This will overwrite everything on every drive connected to this system with random data 7 Times! ##"
+echo "######################################################################################################"
+echo ""
+read -p "Do you want to continue (Yes/NO): " answer
+echo ""
+
+case $answer in
+	Yes*)
+		for i in {1..7}; do
+			sudo dd -if=/dev/urandom -of=/dev/sd* bs=1M conv=notrunc
+		done;;
+	*)
+		echo "Aborting";;
+esac

@@ -1,0 +1,10 @@
+# Generall
+set page-padding 			5
+set selection-clipboard 		clipboard
+set guioptions 				""
+# Appearance
+set font 				"Hack Nerd Font 10"
+set recolor 				true
+set recolor-lightcolor			"rgba(28, 30, 38, 1)"
+set default-bg				"rgba(28, 30, 38, 1)"
+set statusbar-bg			"rgba(28, 30, 38, 1)"
