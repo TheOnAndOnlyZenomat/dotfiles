@@ -1,0 +1,30 @@
+f#+TITLE: Outline for ZWM
+#+AUTHOR: Zeno
+#+DESCRIPTION: Outline for my own window manager written in C for learning purpose
+#+STARTUP: showall
+#+OPTIONS: toc
+
+* Table of Contents :toc:
+
+* Basic idea
+
+- tiling window manager
+- minimal
+- writen in C
+- writen using xcb
+  - Tutorial: https://xcb.freedesktop.org/tutorial/
+  - Usage: https://xcb.freedesktop.org/usingxcb/
+  - Example: https://github.com/mcpcpc/xwm
++ maybe implement bar like dwm (xsetroot -name)
+
+* Memo
+
+Do the fricking basics first, before implementing advanced features
+e.g. get a window drawn before anything else is considered
+
+* Compilation
+
++ Compile using:
+#+BEGIN_SRC sh
+ gcc zwm.c -o zwm -lxcb
+#+END_SRC

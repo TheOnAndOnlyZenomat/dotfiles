@@ -4,3 +4,16 @@ ls
 ls -al
 ls -l
 ls -l
+ls
+exit
+ls
+man ncmpcpp
+mpc search
+mpc search title somebody
+mpc search blinding
+mpc search song blinding
+mpc search Title blinding
+mpc search Track blinding
+ls
+ls -l
+exit

@@ -1,0 +1,8 @@
+#+OPTIONS: toc:nil num:nil
+#+BEGIN_HTML
+---
+layout: post
+title: "Testpost with org"
+excerpt_separator: <!--more-->
+---
+#+END_HTML

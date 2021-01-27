@@ -1,10 +1,10 @@
-sw_volume: 56
+sw_volume: 50
 audio_device_state:1:pulseaudio
 audio_device_state:1:my_fifo
 state: pause
-current: 0
-time: 139.691000
-random: 0
+current: 23
+time: 113.065000
+random: 1
 repeat: 0
 single: 0
 consume: 0
@@ -12,6 +12,77 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Chill/Gravity Falls theme song but it's lofi hip hop 1 hour version-Hi04M8cmSmU.mp3
-1:Rock/Last Resort (explicit) - Papa Roach-Hm7vnOC4hoY.mp3
+0:City Pop シティーポップ - aofd3/1986 Omega Tribe/Navigator/1986 Omega Tribe - You Belong to Him.mp3
+1:City Pop シティーポップ - aofd3/1986 Omega Tribe/Navigator/1986 Omega Tribe - 君は1000%.mp3
+2:City Pop シティーポップ - aofd3/Ami Ozaki/Light Mellow Ami Ozaki 80's/Ami Ozaki - Junjou.mp3
+3:City Pop シティーポップ - aofd3/Anri/COOOL/Anri - SURPRISE OF SUMMER.mp3
+4:City Pop シティーポップ - aofd3/Anri/Heaven Beach/Anri - Last Summer Whisper.mp3
+5:City Pop シティーポップ - aofd3/Babe/Bravo ! + Single Collection/Babe - I Don't Know ! - Single Version □ Bonus Track.mp3
+6:City Pop シティーポップ - aofd3/Beckett/Primetime/Beckett - Crush.mp3
+7:City Pop シティーポップ - aofd3/Blu-Swing/BLU-SWING 10th ANNIVERSARY BEST/Blu-Swing - Sunset (2019 Y.Nakamura Remastering).mp3
+8:City Pop シティーポップ - aofd3/CASIOPEA/Asian Dreamer/CASIOPEA - Coast to Coast.mp3
+9:City Pop シティーポップ - aofd3/CASIOPEA/Asian Dreamer/CASIOPEA - Galactic Funk.mp3
+10:City Pop シティーポップ - aofd3/Every Little Thing/まいにち□/Every Little Thing - まいにち□.mp3
+11:City Pop シティーポップ - aofd3/Friday Night Plans/Plastic Love/Friday Night Plans - Plastic Love.mp3
+12:City Pop シティーポップ - aofd3/Haruomi Hosono/Philharmony/Haruomi Hosono - スポーツマン (2019 Remastering).mp3
+13:City Pop シティーポップ - aofd3/Haruomi Hosono/フィルハーモニー(2019 Remastering)/Haruomi Hosono - スポーツマン (2019 Remastering).mp3
+14:City Pop シティーポップ - aofd3/Hitomi Tohyama/Ritual Chants/Hitomi Tohyama - Wanna Kiss.mp3
+15:City Pop シティーポップ - aofd3/Junko Ohashi/THE BEST SONGS of JUNKO OHASHI/Junko Ohashi - Sweet Love.mp3
+16:City Pop シティーポップ - aofd3/Junko Ohashi/THE BEST SONGS OF JUNKO OHASHI/Junko Ohashi - 男と女.mp3
+17:City Pop シティーポップ - aofd3/Kingo Hamada/midnight cruisin'/Kingo Hamada - 街のドルフィン.mp3
+18:City Pop シティーポップ - aofd3/Kingo Hamada/midnight cruisin'/Kingo Hamada - midnight cruisin'.mp3
+19:City Pop シティーポップ - aofd3/KIRINJI/cherish/KIRINJI - killer tune kills me.mp3
+20:City Pop シティーポップ - aofd3/Kiyotaka Sugiyama/NEVER ENDING SUMMER/Kiyotaka Sugiyama - Misty Night Cruising.mp3
+21:City Pop シティーポップ - aofd3/Kiyotaka Sugiyama/River's Island/Kiyotaka Sugiyama - River's Island.mp3
+22:City Pop シティーポップ - aofd3/Macross 82-99/CHAM!/Macross 82-99 - Fun Tonight.mp3
+23:City Pop シティーポップ - aofd3/Makoto Matsushita/FIRST LIGHT (2018 Remaster)/Makoto Matsushita - First Light - 2018 Remaster.mp3
+24:City Pop シティーポップ - aofd3/Makoto Matsushita/FIRST LIGHT (2018 Remaster)/Makoto Matsushita - Love Was Really Gone - 2018 Remaster.mp3
+25:City Pop シティーポップ - aofd3/Marika Takeuchi/Rain Stories/Marika Takeuchi - Rain in the Park.mp3
+26:City Pop シティーポップ - aofd3/Matsuko Mawatari/Matsuko Mawatari The Best of Matsuko Mawatari/Matsuko Mawatari - Hohoemi no Bakudan.mp3
+27:City Pop シティーポップ - aofd3/Miki Matsubara/Miki Matsubara Best Collection/Miki Matsubara - Mayonaka no Door □ Stay With Me.mp3
+28:City Pop シティーポップ - aofd3/Miki Matsubara/POCKET PARK (Remastered)/Miki Matsubara - 真夜中のドア□Stay With Me.mp3
+29:City Pop シティーポップ - aofd3/Minako Honda/GOLDEN DAYS/Minako Honda - Temptation (誘惑).mp3
+30:City Pop シティーポップ - aofd3/Minako Honda/GOLDEN DAYS/Minako Honda - 1986年のマリリン.mp3
+31:City Pop シティーポップ - aofd3/Minako Yoshida/扉の冬/Minako Yoshida - 外はみんな□□□□□□□.mp3
+32:City Pop シティーポップ - aofd3/Mitch Murder/Selection 4/Mitch Murder - Sniper Rouge.mp3
+33:City Pop シティーポップ - aofd3/Momoko Kikuchi/Adventure/Momoko Kikuchi - Mystical Composer.mp3
+34:City Pop シティーポップ - aofd3/Naoko Gushima/URBAN BLUES Presents BEST OF NAOKO GUSHIMA/Naoko Gushima - Candy.mp3
+35:City Pop シティーポップ - aofd3/Natsu Summer/時のシルエット/Natsu Summer - 時のシルエット.mp3
+36:City Pop シティーポップ - aofd3/never young beach/YASHINOKI HOUSE/never young beach - Doudemo Iikedo.mp3
+37:City Pop シティーポップ - aofd3/Night Tempo/杏里 - Night Tempo presents ザ□昭和グルーヴ/Night Tempo - Remember Summer Days (Night Tempo Showa Groove Mix).mp3
+38:City Pop シティーポップ - aofd3/NONA REEVES/Sweet Survivor/NONA REEVES - Sweet Survivor.mp3
+39:City Pop シティーポップ - aofd3/Off Course/i(ai)~Best Of Off Course Digital Edition/Off Course - 哀しいくらい.mp3
+40:City Pop シティーポップ - aofd3/Official HIGE DANdism/Report/Official HIGE DANdism - Itan na star.mp3
+41:City Pop シティーポップ - aofd3/Omoinotake/Street Light/Omoinotake - Never Let You Go.mp3
+42:City Pop シティーポップ - aofd3/Onyanko Club/おニャン子クラブベスト/Onyanko Club - セーラー服を脱がさないで.mp3
+43:City Pop シティーポップ - aofd3/Pink Martini/1969/Pink Martini - マシュ□ケ□ナダ.mp3
+44:City Pop シティーポップ - aofd3/S. Kiyotaka & Omega Tribe/Another Summer/S. Kiyotaka & Omega Tribe - Dear Breeze.mp3
+45:City Pop シティーポップ - aofd3/S. Kiyotaka & Omega Tribe/AQUA CITY/S. Kiyotaka & Omega Tribe - Summer Suspicion.mp3
+46:City Pop シティーポップ - aofd3/S. Kiyotaka & Omega Tribe/AQUA CITY/S. Kiyotaka & Omega Tribe - MIDNIGHT DOWN TOWN.mp3
+47:City Pop シティーポップ - aofd3/S. Kiyotaka & Omega Tribe/First Finale/S. Kiyotaka & Omega Tribe - 夕凪通信.mp3
+48:City Pop シティーポップ - aofd3/S. Kiyotaka & Omega Tribe/ゴールデン□ベスト/S. Kiyotaka & Omega Tribe - ふたりの夏物語 NEVER ENDING SUMMER.mp3
+49:City Pop シティーポップ - aofd3/S. Kiyotaka & Omega Tribe/ゴールデン□ベスト/S. Kiyotaka & Omega Tribe - ガラスのPALM TREE.mp3
+50:City Pop シティーポップ - aofd3/Shintaro Sakamoto/まともがわからない/Shintaro Sakamoto - まともがわからない.mp3
+51:City Pop シティーポップ - aofd3/Shizuka Kudo/Mysterious/Shizuka Kudo - Kindan no Telepathy.mp3
+52:City Pop シティーポップ - aofd3/Suchmos/Stay Tune/Suchmos - Stay Tune.mp3
+53:City Pop シティーポップ - aofd3/Suchmos/The Kids/Suchmos - Pinkvibes.mp3
+54:City Pop シティーポップ - aofd3/T-SQUARE/Paradise/T-SQUARE - Night Cruise.mp3
+55:City Pop シティーポップ - aofd3/T-SQUARE/THE SQUARE Year End Live 20151226/T-SQUARE - Breeze and You (Live Version).mp3
+56:City Pop シティーポップ - aofd3/Taeko Onuki/Copine/Taeko Onuki - Les Aventures de TINTIN.mp3
+57:City Pop シティーポップ - aofd3/tofubeats/Plastic Love/tofubeats - Plastic Love.mp3
+58:City Pop シティーポップ - aofd3/tofubeats/POSITIVE/tofubeats - POSITIVE feat. Dream Ami.mp3
+59:City Pop シティーポップ - aofd3/tofubeats/POSITIVE/tofubeats - すてきなメゾン feat. 玉城ティナ.mp3
+60:City Pop シティーポップ - aofd3/Tomoko Aran/浮遊空間/Tomoko Aran - I'm in Love.mp3
+61:City Pop シティーポップ - aofd3/Tomoko Aran/浮遊空間/Tomoko Aran - Midnight Pretenders.mp3
+62:City Pop シティーポップ - aofd3/UNCHAIN/Love & Groove Delivery/UNCHAIN - MarunouchiSadistic.mp3
+63:City Pop シティーポップ - aofd3/Virtual Mage/Moondust/Virtual Mage - Her.mp3
+64:City Pop シティーポップ - aofd3/Wink/Back to front/Wink - 愛を奪って 心縛って.mp3
+65:City Pop シティーポップ - aofd3/Wink/Reminiscence/Wink - 愛が止まらない ~Turn It Into Love~.mp3
+66:City Pop シティーポップ - aofd3/Yoko Oginome/ダンシング□ヒーロー -ALL EAT YOU UP-/Yoko Oginome - ダンシング□ヒーロー(Eat You Up) - Dear Pop Singer Version.mp3
+67:City Pop シティーポップ - aofd3/Yukiko Okada/Golden□Idol Yukiko Okada/Yukiko Okada - Summer Beach.mp3
+68:City Pop シティーポップ - aofd3/Yukiko Okada/Golden□Idol Yukiko Okada/Yukiko Okada - Kuchibiru Network.mp3
+69:City Pop シティーポップ - aofd3/Yumi Matsutoya/NO SIDE/Yumi Matsutoya - DOWNTOWN BOY.mp3
+70:City Pop シティーポップ - aofd3/Yurie Kokubu/Relief 72 hours/Yurie Kokubu - Just a Joke.mp3
+71:City Pop シティーポップ - aofd3/リアムMAZE1981/Summer Lovin'/リアムMAZE1981 - Magic!.mp3
+72:City Pop シティーポップ - aofd3/秋元薫/Cologne/秋元薫 - 我がままなハイヒール.mp3
 playlist_end

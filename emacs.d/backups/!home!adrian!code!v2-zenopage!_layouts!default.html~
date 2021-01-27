@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html land="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-sclae+1.0">
+    <link rel="icon" href="/assets/images/favicon.ico">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    {% feed_meta %}
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+
+  <header>
+    <h1>{{ page.header }}</h1>
+    <p>{{ page.description }}
+
+    {% include navigation.html %}
+  </header>
+
+  <body>
+    {{ content }}
+  </body>
+
+  <footer>
+    {% include footer.html %}
+  </footer>
+</html>

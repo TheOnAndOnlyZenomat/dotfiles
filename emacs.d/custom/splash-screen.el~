@@ -79,7 +79,7 @@
 
     ;; If there are buffer associated with filenames,
     ;;  we don't show splash screen.
-    (if (eq 3 (length (cl-loop for buf in (buffer-list)
+    (if (eq 0 (length (cl-loop for buf in (buffer-list)
                               if (buffer-file-name buf)
                               collect (buffer-file-name buf))))
         

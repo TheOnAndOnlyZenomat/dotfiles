@@ -1,0 +1,64 @@
+#!/bin/sh
+
+start () {
+    
+    cd /home/adrian/Downloads/vpn/windscribe
+
+    ip_before=$(curl --silent v4.ident.me)
+    
+    echo "Connecting..."
+    echo
+    echo
+
+    openvpn --config Windscribe-Frankfurt-Castle-GCM.ovpn --auth-user-pass creds &
+
+    sleep 10
+
+    ip_after=$(curl --silent v4.ident.me)
+
+    if [[ $ip_after != $ip_before ]]; then
+	echo "VPN connected" > /home/adrian/scripts/statusbar/vpn
+    else
+	echo "Something went wrong"
+	exit 1
+    fi
+
+    pkill -RTMIN+17 dwmblocks
+}
+
+end () {
+
+    cd /home/adrian/Downloads/vpn/windscribe
+
+    ip_before=$(curl --silent v4.ident.me)
+   
+    echo "Disconnecting..."
+    echo
+    echo
+ 
+    vpn_pid=$(pgrep openvpn | tail -n 1)
+
+    kill $vpn_pid
+
+    ip_after=$(curl --silent v4.ident.me)
+
+    if [[ $ip_after != $ip_before ]]; then
+	echo "No VPN connection" > /home/adrian/scripts/statusbar/vpn
+    else
+	echo "Something went wrong"
+	exit 1
+    fi
+
+    pkill -RTMIN+17 dwmblocks
+}
+
+
+if [[ $1 == "start" ]]; then
+    start
+elif [[ $1 == "stop" ]]; then
+    end
+else
+    echo "Argument not recognized, please specify start or stop"
+fi
+    
+exit 0

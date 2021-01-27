@@ -1,0 +1,9 @@
+#+OPTIONS: toc:nil num:nil
+#+BEGIN_SRC html
+---
+layout: post
+title: "Using org-mode with Jekyll"
+permalink: /:title/
+tags: hacking
+---
+#+END_SRC

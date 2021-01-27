@@ -1,0 +1,10 @@
+#+TITLE: Automaten und Sprache
+#+AUTHOR: Adrian Eichelbaum
+
+* Eine Schatzsuche
+
+PI -a->SB-a->MH-a->PI
+
+PI-b->MH-b->MI-b->SB-b->DI->SB-....
+
+*PI-b->MH-b->MI-a->SC-b->TI*

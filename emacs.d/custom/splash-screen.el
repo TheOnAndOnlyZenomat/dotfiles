@@ -79,7 +79,7 @@
 
     ;; If there are buffer associated with filenames,
     ;;  we don't show splash screen.
-    (if (eq 1 (length (cl-loop for buf in (buffer-list)
+    (if (eq 0 (length (cl-loop for buf in (buffer-list)
                               if (buffer-file-name buf)
                               collect (buffer-file-name buf))))
         
@@ -137,12 +137,12 @@
           (goto-char 0)
           (read-only-mode t)
           
-          (local-set-key [t]               'splash-screen-fade-to-about)
-          (local-set-key (kbd "C-[")       'splash-screen-fade-to-default)
-          (local-set-key (kbd "<escape>")  'splash-screen-fade-to-default)
-          (local-set-key (kbd "q")         'splash-screen-fade-to-default)
-          (local-set-key (kbd "<mouse-1>") 'mouse-set-point)
-          (local-set-key (kbd "<mouse-2>") 'operate-this-button)
+          ;;(local-set-key [t]               'splash-screen-fade-to-about)
+          ;;(local-set-key (kbd "C-[")       'splash-screen-fade-to-default)
+          ;;(local-set-key (kbd "<escape>")  'splash-screen-fade-to-default)
+          ;;(local-set-key (kbd "q")         'splash-screen-fade-to-default)
+          ;;(local-set-key (kbd "<mouse-1>") 'mouse-set-point)
+          ;;(local-set-key (kbd "<mouse-2>") 'operate-this-button)
           ;; (local-set-key " "               'splash-screen-fade-to-default)
           ;; (local-set-key "x"               'splash-screen-fade-to-default)
           ;; (local-set-key (kbd "<RET>")     'splash-screen-fade-to-default)

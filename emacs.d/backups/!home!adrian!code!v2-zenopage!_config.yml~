@@ -1,0 +1,20 @@
+# Server setup
+timezone: Europe/Berlin
+url: "https://adrsrv.duckdns.org"
+baseurl: ""
+
+# Blog
+title: "Zeno's Blog"
+tagline: "My blog about stuff"
+description: "A webpage and blog for me, Zeno, a 17 year old dude interested in Linux, FOSS, selfhosting and other stuff."
+
+# Author/Contact
+author:
+  name: Zeno
+  url: "https://adrsrv.duckdns.org"
+  email: "ad.eichelbaum@gmail.com"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-org

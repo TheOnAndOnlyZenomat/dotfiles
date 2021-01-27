@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Testpost with org"
+excerpt_separator: <!--more-->
+---
+
+<p>
+as;djnxcdjfsdfaiwejahsdfjh
+</p>
+
+<!--more-->
+
+<p>
+test
+</p>
+
+<div class="org-src-container">
+<pre class="src src-ruby">
+puts "Hello World"
+
+</pre>
+</div>

@@ -1,0 +1,5 @@
+# Server setup
+
+timezone: Europe/Berlin
+url: "https://adrsrv.duckdns.org"
+baseurl: ""

@@ -1,0 +1,86 @@
+<h1 id="table-of-contents">TABLE OF CONTENTS <span class="tag" data-tag-name="toc"><span class="smallcaps">toc</span></span></h1>
+<h1 id="headlines">Headlines</h1>
+<p>There are different headline types</p>
+<p>+ * for headline</p>
+<p>+ ** for subheadline</p>
+<p>and so on</p>
+<h1 id="keyboard-shortcuts">Keyboard shortcuts</h1>
+<h2 id="org">Org</h2>
+<ul>
+<li>TAB - fold/unfold headlines</li>
+<li>S-TAB - fold all headlines / unfold headline for headline</li>
+<li>M-up/down - move headline/point up or down</li>
+<li>M-left/right - promote or demote a headline/point</li>
+<li>M-RET - insert a new headline or point</li>
+</ul>
+<h2 id="todo">todo</h2>
+<ul>
+<li>S-left/right - toggle done, todo and not a todo</li>
+<li>C-c /t - show TODOs in current document</li>
+</ul>
+<h2 id="agendas">Agendas</h2>
+<ul>
+<li>C-c a - agenda</li>
+<li>C-c [ - add document to the list of agenda files</li>
+<li>C-c ] - remove document from the list of agenda files</li>
+<li>C-c . - add date</li>
+<li>C-u C-c - add time and date</li>
+</ul>
+<h2 id="code">Code</h2>
+<ul>
+<li>C-c C-c - evaluate code in codeblock</li>
+</ul>
+<h1 id="lists">Lists</h1>
+<ul>
+<li>ordered lists with 1. 2. 3.
+<ul>
+<li>description with two colons (::)</li>
+</ul></li>
+<li>unordered lists with +, -</li>
+</ul>
+<h1 id="formating">Formating</h1>
+<ul>
+<li>bold with preceding and following * <strong>hello</strong></li>
+<li>italic with preceding and folowing / <em>hello</em></li>
+<li>underline with preceding and following _ <u>hello</u></li>
+<li>code with preceding and following = <code>hello</code></li>
+<li>verbatim with preceding and following ~ <code>hello</code></li>
+<li>strike-through with preceding and following + <del>hello</del></li>
+</ul>
+<h1 id="todo-1">todo</h1>
+<ul>
+<li>add todo by adding a headline with a following TODO</li>
+<li>add different states by adding a <code>#+TODO: STATES</code> to the header</li>
+<li>order of the states important</li>
+<li>from left to right: orange - green</li>
+<li>can add states also in init.el
+<ul>
+<li>=(setq org-todo-keywords</li>
+</ul></li>
+</ul>
+<p>'((sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")))=</p>
+<h2 id="hello-2020-12-11-sun"><span class="todo TODO">TODO</span> hello &lt;2020-12-11 Sun&gt;</h2>
+<h2 id="hello"><span class="done DONE">DONE</span> hello</h2>
+<h1 id="agendas-1">Agendas</h1>
+<ul>
+<li>accumulate tasks from different org files</li>
+<li>add org files through keybinding to agenda</li>
+<li>can also add deadlines/appointments to TODO -&gt; will show in agenda calendar</li>
+</ul>
+<h1 id="tags">Tags</h1>
+<ul>
+<li>add <code>#+TAGS: { @OFFICE(o) @HOME(h) } COMPUTER(c) PHONE(p) READING(r)</code> to header</li>
+<li>{ } things in there are exclusive, cant be added together</li>
+</ul>
+<h1 id="code-1">Code</h1>
+<ul>
+<li>begin code block with #+BEGIN<sub>SRC</sub> language</li>
+<li>end code block with #+END<sub>SRC</sub></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> random_int():</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> random.randint(<span class="dv">0</span>,<span class="dv">10</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> random_int()</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> y</span></code></pre></div>

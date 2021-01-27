@@ -1,0 +1,438 @@
+# Datenbanken
+
+1. 
+
+* J. hat mehrere Tabellen, W. nur eine
+* J. hat auch Teilnehmer Nr. und Kurs Nr. zugeteilt, ansonsten gleiche Infos
+
+2. a) Karla muss dem Aufbaukurs zugeordnet werdem; W. muss neue Zeile mit 10 Spalten anlegen, vieles doppelt; J. muss nur in einer Tabelle eine neue Zeile mit zwei Spalten erstellen
+
+   b) W. muss alle Marks in Spalte Lehrer ersetzen; J. muss nur einen Wert in einer Tabelle ändern
+
+   c) J. fügt neue Zeile bei Kursen hinzu und ordnet den neuen Teilnehmer den Kurs zu und für neue KUnden die Informationen hinzu; W. muss für alle Teilnehmer eine neue Zeile ausfüllen
+
+   d) J. kann einfach in der Teilnehmer liste nachschauen, wer Teilgenommen hat, Braucht nur den Kurs zu löschen; W. muss ganze Tabelle durchforsten um die Dinge zu verschicken und muss jede einzelne Zeile mit dem Kurs löschen
+
+   e) J. schau kurz iin die Kursliste; W. Muss auf jede einzelne Zeile schauen, ob sich dort noch ein Kurs befindet den er noch nicht gesehen hat
+3. Jessicas Vorschlag ist besser, hier lassen sich die Datenbanken leichter managen und die Daten sind deutlich übersichtlicher und leichter zugänglich
+
+## Definition
+
+Einheit aus systematischen und strukturierte Zusammenfassung von Daten eines Problembereichs (Datenbasis/Datenbank) sowie einer Software zur Verwaltung dieser Daten (Datenbankmanagementsystem)
+
+## Schema
+
+siehe Hefter
+
+## Aufgaben des DBMS
+
+* zentrale Speicherung und einheitliche Verwaltung von Daten
+* Dienstleistungen des Datenzugriffs unter Verwendung von Datenbanksprachen
+* Mechanismen der Datensicherheit
+  * Zugriffskontrolle
+  * Organsiation des Mehrbenutzerberiebs
+  * Sicherstellung des ACID-Prinzips für Transaktionen
+
+### Zugriffskontrolle
+
+DBMS erlaubt verschiedene ROllen für Benuzer mit unterschiedlichen Rechten
+
+Bsp:
+
+* Mark als Chef darf alles
+* Schüler Karla kann sich Kurse nur ansehen
+* Lehrer Simone kann auch Teilnehmerliste für Kurse einsehen
+
+## Exkurs ACID-Prinzip
+
+**Atomicity:** Alles oder nichts - eine Transaktion wird entweder komplett ausgeführt oder gar nicht
+
+**Consistency:** eine Transaktion erhält die Konsistenz der Datenbank
+
+**Isolation:** DBMS sort für logisches Einbenutzer-Betrieb
+
+**Durability:** Änderungen erfolgreich beendeter Transaktionen bleiben erhalten, auch wenn danach Fehler auftretten (z.B. Systemausfall)
+
+\# Datenbanken
+
+1\. 
+
+\* J. hat mehrere Tabellen, W. nur eine
+
+\* J. hat auch Teilnehmer Nr. und Kurs Nr. zugeteilt, ansonsten gleiche Infos
+
+2\.    a) Karla muss dem Aufbaukurs zugeordnet werdem; W. muss neue Zeile mit 10 Spalten anlegen, vieles doppelt; J. muss nur in einer Tabelle eine neue Zeile mit zwei Spalten erstellen
+
+        b) W. muss alle Marks in Spalte Lehrer ersetzen; J. muss nur einen Wert in einer Tabelle ändern
+
+        c) J. fügt neue Zeile bei Kursen hinzu und ordnet den neuen Teilnehmer den Kurs zu und für neue KUnden die Informationen hinzu; W. muss für alle Teilnehmer eine neue Zeile ausfüllen
+
+        d) J. kann einfach in der Teilnehmer liste nachschauen, wer Teilgenommen hat, Braucht nur den Kurs zu löschen; W. muss ganze Tabelle durchforsten um die Dinge zu verschicken und muss jede einzelne Zeile mit dem Kurs löschen
+
+        e) J. schau kurz iin die Kursliste; W. Muss auf jede einzelne Zeile schauen, ob sich dort noch ein Kurs befindet den er noch nicht gesehen hat
+
+3\. Jessicas Vorschlag ist besser, hier lassen sich die Datenbanken leichter managen und die Daten sind deutlich übersichtlicher und leichter zugänglich
+
+\## Definition
+
+Einheit aus systematischen und strukturierte Zusammenfassung von Daten eines Problembereichs (Datenbasis/Datenbank) sowie einer Software zur Verwaltung dieser Daten (Datenbankmanagementsystem)
+
+\## Schema
+
+siehe Hefter
+
+\## Aufgaben des DBMS
+
+\* zentrale Speicherung und einheitliche Verwaltung von Daten
+
+\* Dienstleistungen des Datenzugriffs unter Verwendung von Datenbanksprachen
+
+\* Mechanismen der Datensicherheit
+
+	\* Zugriffskontrolle
+
+	\* Organsiation des Mehrbenutzerberiebs
+
+	\* Sicherstellung des ACID-Prinzips für Transaktionen
+
+\### Zugriffskontrolle
+
+DBMS erlaubt verschiedene ROllen für Benuzer mit unterschiedlichen Rechten
+
+Bsp:
+
+\* Mark als Chef darf alles
+
+\* Schüler Karla kann sich Kurse nur ansehen
+
+\* Lehrer Simone kann auch Teilnehmerliste für Kurse einsehen
+
+\## Exkurs ACID-Prinzip
+
+**Atomicity:** Alles oder nichts - eine Transaktion wird entweder komplett ausgeführt oder gar nicht
+
+**Consistency:** eine Transaktion erhält die Konsistenz der Datenbank (Datenbank immer Fehlerfrei)
+
+**Isolation:** DBMS sorgt für logisches Einbenutzer-Betrieb
+
+**Durability:** Änderungen erfolgreich beendeter Transaktionen bleiben erhalten, auch wenn danach Fehler auftretten (z.B. Systemausfall)
+
+\## Transaktionen
+
+\* Folgen von Datenbankoperationen, die die Datenbank von einem Zustand in den nächsten (ggf. geänderten) überführen
+
+Operationen: Lese Feld "Neoprenanzug" -> Lösche "M3" -> Trage "M5" ein
+
+Dieses ganzen Operationen werden unter einer Transaktionen zusammengefasst
+
+\# Datenmodelle
+
+\* dienen der Erfassung und Dartstellung der Informtionsstruktur einer Anwendung
+
+\* bestimmt somit, wie Daten im DBS gespeichert und bearbeitet werden können
+
+\## Eigenschaften
+
+\* **Statische** Eigenschaften (genereische Datenstruktur): Objektte und Beziehungen, inklusive Standarddatentypen
+
+\* **Dynamische** Eigenschaften: Operationen und Beziehungen zwischen Operationen (z.B. Einfügen, Ändern, Abfragen)
+
+**Integritätsbedingungen** an Objekten und Beziehungen:
+
+Objekte wären dabei Daten über Kurse und Kursteilnehmer, Beziehungen wären wer an welchem Kurs teilnimmt
+
+\* Integritätsbedingungen für Objekte: Kursnummer muss eindeutig sein, Startdatum darf nur in der Zukunft liegen
+
+\* Integritätsbedingungenfür Beziehungen: jeder Teilnehmer wird nur 1x in einen bestimmten Kurs eingeschrieben
+
+\# Datenbankmodelle
+
+\## Hierarisches Modell
+
+\* gehen von allgemeinen aus und verzweigen sich zum speziellen
+
+\* jeder genau einen Vorgänger, unbeschränkte Nachfolger
+
+\* Baumstruktur
+
+**Vorteile:**
+
+\* schneller Zugriff
+
+\* einfach/übersichtlich 
+
+**Nachteile:**
+
+\* Verweise zwischen den Daten müssen vorher bekannt sein
+
+\* unflexibel
+
+\* Verknüpfung/Beziehungen schwierig darzustellen
+
+![](hierarchisches/datenbankmodell/beispiel.jpg)
+
+\## Netzwerkmodell
+
+\* Ähnelt hirarischen Model
+
+\* keine strenge Hierarchie
+
+\* ein Datenfeld besteht aus einem Namen und einem Wert
+
+\* kann mehrere Vorgänger haben, somit auch mehrere erste (keine Wurzel)
+
+**Vorteile:**
+
+\* Verknüpfen möglich (dadurch komplexere Inhalte abbildbar)
+
+**Nachteile:**
+
+\* je größer, desto unübersichtlicher
+
+\* langsam
+
+![](netzwerk*datenbankmodell*beispiel-465x360.jpg)
+
+\## Objektorientiertes Modell
+
+\* Datensatz wird mit all seinen Attributen zu einem Objekt zusammengefasst
+
+\* Neben den Attributen werden auch Methoden gespeichert
+
+\* so hat jedes Objekt auch Akivitäten die es ausführen kann
+
+\* Objekte werden zu Klassen zusammengefasst -> Entstehungen von Hirarchien
+
+\* Unterklassen nehmen Eigenschaften von überen Klassen an
+
+\* Objekte einer Klasse können mit anderen Klassen verbunden werden
+
+**Vorteile:**
+
+\* flexibel
+
+\* Wiederverwendbarkeit
+
+**Nachteile:**
+
+\* langsam
+
+\* komplizierte Implementierung
+
+\* nicht weit verbreitet
+
+![](objektorientiertes*datenbankmodell*beispiel.jpg)
+
+**Kann ich anderen erklären:**
+
+* ~~PHP~~
+* ~~DBMS~~
+* Netzwerk
+* ~~Redundanz~~
+* ~~Integrität~~
+* ~~Entität~~
+* ~~Linear~~
+* ~~Darstellung~~
+* ~~Eigenschaft~~
+* ~~Hierarchisch~~
+* ~~Preozedura~~
+* ~~Tabelle~~
+* ~~Attribut~~
+* ~~Auswertung~~
+* ~~Datenbanksprach~~
+* ~~Schlüssel~~
+* ~~SQL~~
+* ~~Beziehung~~
+* ~~Datenbank~~
+* ~~Datentyp~~
+* FTP
+* ~~Objektorientiiert~~
+* ~~datenverwaltung~~
+* ~~ACID~~
+* ~~Webdatenbank~~
+
+**Hab ich schonmal gehört:**
+
+* ~~Datenbasis~~
+* ~~DBS~~
+* ~~Kardinalität~~
+* ~~Normaliierung~~
+* ~~Datenmodell~~
+* ~~Kosnsistenz~~
+* ~~Datenbankschema~~
+* ~~Rationale Datenbank~~
+* ~~Klassendiagramm~~
+* ~~ERD~~
+
+**Kenn ich net:**
+
+* ~~Normalform~~
+
+## Relationale Datenbanken
+
+### Relationsschemata
+
+* Beschreibungder zu modellierenden Objekte der Ausgangssituation
+* bestehen aus einer **Menge von Attributen** (Metadaten), denen jeweils eine *domain* (**Datentyp**) zugeordnet ist
+* meist Standarddatentypen
+  * integer, string, boolean, date
+* **Notation:**
+  * Name (Attribut_1, Attribut_2,...) (ohne Datentyp)
+  * Name (Attribut_1:domain, Attribut_2:domain,...) (mit Datentyp)
+
+### Relation
+
+* aktuell vorhandene, passende Datensätze zu eine, Relationsschema
+* jeder Datenwert innerhalb einer Relation ist **atomares** (darf nicht weiter Aufspaltbar sein) Datenelement
+
+Baum (**Relationsname**)
+
+|Art |Höhe |Alter |Durchmesser |Fam |---|---|---|---|---| |Linde |20 |50 |1,5 |Laub | | |Gingko |2 |15 |0.2 |Laub | |
+
+Tabellenkopf: **relationenschema**
+
+Einzelne DInge im Tabellenkopf: **Attribute**
+
+In einer Zelle: **Attributwert**
+
+Eine Zeile in einer Tabelle: **Datensatz**
+
+### Spalten der Relation
+
+* Spaltennamen müssen **eindeutig** sein
+* Reihenfolge ist unwichtig
+* Anzahl der Spalten bezeichnet man als **Grad** der Relation
+
+### Zeilen einer Relation
+
+* Zeilen entsprechen den vorhandenen Datensätzen
+* Anzahl der Datensätze bezeichnet man als **Kardinalität** der Relation
+* Reihenfolge ist unwichtig
+* jeder Datensatz ist eindeutig
+
+Ü:
+
+**Raltionsname**: Surfschule
+
+**Relationschema:** `Surfschule(Name(string) Vorname(string) Unterkunft(string) Kursname(str) Beginnt(date) Dauer(float) Lehrer(str) Board Nr.(str) Rigg Nr.(int) Neoprenanzug Nr. (str))`
+
+**Attribute:**
+
+**Datensatz:** Bender Thomas Seestern Grundkurs 12.08.16 3 Mark S14 340 M3
+
+## Primärschlüssel (PS)
+
+**Definition**: **minimale** Attributmenge, die jeden möglichen Datensatz **eindeutig** identifiziert
+
+* Kennzeichnnugn im Relationsschma durch Unterstreichung
+  * Buch(ISBN, titel, Autor, Preis) (ISBN unterstrichen, geht in markdown net)
+* **keine** NULL-Werte
+* kann künstlich generiert werden
+
+## Darstellung von Beziehungen
+
+* über **Fremdschlüssel(FS)**
+* Definition: Attribut, das in Bezug auf den PS einer anderen Relation definiert ist
+* Kennzeichnung im Relationsschmea durch gestrichelte Unterstreichung
+* Bsp:
+  * Lehrer(Kuerzel, Vorname, Name, Fach1, Fach2) (Kuerzel untetstrichen)
+  * Klasse(KlaBez, KlaRaum, KlaLeiter) (KlaBez unterstrichen, KlaLeiter gestrichelt)
+  * KlaLeiter bezieht sich auf Kuerzel
+
+Ü: Primärschlüssel hier dick und Fremdschlüssel kursiv
+
+Spieler(**ID: int**, Name: str, VName: str, *Verein-ID:int*)
+
+Verein(**Verein-ID: int**, Verband: str, Spielerzahl: int, *Liganummer: int*)
+
+Liga(**Liganummer: int**, Vereinanzahl: int)
+
+Verein:
+
+1, Bayern München, 29, 1
+
+2, BvB, 29, 1
+
+3, Schalke 04, 29, 1
+
+Liga:
+
+1, DFL, 18
+
+2, DFL, 18
+
+3, DFB, 14
+
+Spieler:
+
+1, Neuer, Manuel, 1
+
+2, Bellingham, Jude, 2
+
+3, Kabak, Ozan, 3
+
+### Fremdschlüsselbedingung
+
+* auch **referenzielle Integrität**
+* zugehöriger PS muss existieren
+* d.h. zu jedem Wert eines Fremdschlüsselattributes einer relation muss ein gleicher Wert des Primärschlüssels in irgendeinem Datensatz vorhanden sein
+
+# 4. Relationenalgebra
+
+## Projektion
+
+* Filterung bestimmter Spalten
+* Notation: **PAttibut(Relatiom)** (Attribut unten an P angesetzt)
+
+Tabelle mit einer Spalte KName -> PKName(Surfkurs) -> Spalte mit PKName(Surfkurs) und den Zeilen von der vorherigen Tabelle
+
+* voN Tabelle werden alle Spalten bis auf die angegebene gelöscht
+* es werden immer alle Zeilen ausgegeben, unabhängig, ob etwas zweimal vorkommt
+
+## Selektion
+
+* Filterung von Zeilen nach gegebener Bedingung
+* Notation **SBedingung(Relation)** (Bedingung wieder klein unten angestellt)
+* Bedingung meist in der Form *Attribut = Attributwert*
+* hier immer alle Spalten ausgegeben
+
+Tabelle mit Kname und Lehrer -> SLehrer=MArk(Surfkurs) -> Zeilen mit Mark als Lehrer
+
+## Vereinigung
+
+* Zusammenführung von zwei Relationen
+* Relationen müssen dasselbe Schema haben
+* leine doppelten Datensätze, Duplikate werden entfernt
+* Notation: **Relation1 u Relation2** (u ist mathematisches Zeichen)
+* Siehe Folie auf Opal für Beispiel
+
+## Differenz
+
+* aus der ersten Relation werdena lle Datensätze entfernt, die auch in der zweiten Relation vorkommen
+* Reihenfolge der Relation spielt **eine** Rolle
+* Notation: **Relation1\\Relation2** 
+* Siehe Folie Opal für Beispiel
+
+## Kreuzprodukt
+
+* Kombination der Datensätte beider Relationen auf alle möglichen Arten
+* Notation: **Relation1 x Relation2**
+
+Beispiel auf Opal
+
+## Umbennenung
+
+* Notwendigkeit, wenn z.B. Kreuzprodukt von Relationen mit einem gleichen Attributnamen gebildet werden soll
+* Notation: **U(neuer Attributname <- alter Attributname)(Relation)** (erste Klammer unten an U angesetzt, ohne Klammerzeichen)
+* auch für gesamte Relation Möglich
+* Notation: **U(neuer Namer)(Relation)** (erste Klammer wieder unten angesetzt)
+
+## Join (Verbund)
+
+* Ziel: beim Kreuzprodukt nur die sinnvollen Datensätze ausgeben
+* Hintereinanderausführung von Kreuzprodukt und Selektion
+* Notation und Beispiel siehe Opal
+* Notation: **Relation1 [x]**Bedingung **Relation2**
+
+    = S(Bedingung)(Relation1 x Relation2)
+* Bedingung **IMMER* der Primärschlüssel bzw. Fremdschlüssel**

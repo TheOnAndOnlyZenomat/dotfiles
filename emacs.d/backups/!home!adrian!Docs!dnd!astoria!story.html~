@@ -1,0 +1,1423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-01-16 Sat 15:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Astoria</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Adrian Eichelbaum" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Astoria</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org1e69ab7">1. Initial Ideas</a></li>
+<li><a href="#org8ccc885">2. Backgroundinformation</a>
+<ul>
+<li><a href="#org7a4a1ce">2.1. 03.12.1943 bombing of Leizpig</a></li>
+<li><a href="#orgb3ab1c8">2.2. Erla Maschinenwerke</a></li>
+<li><a href="#org87e6069">2.3. Mitteldeutsche Motorenwerke (MIMO)</a></li>
+<li><a href="#org02ae63a">2.4. Leizpiger Meuten</a></li>
+</ul>
+</li>
+<li><a href="#org305e753">3. Kommunitischer Wiederstand</a>
+<ul>
+<li><a href="#orge5e4c6d">3.1. First group</a></li>
+<li><a href="#org298ca2e">3.2. Second Group</a></li>
+<li><a href="#orgcd119f2">3.3. Third Group</a></li>
+<li><a href="#org7938936">3.4. Fourth Group / Internationale Antifaschistisches Komitee (IAK)</a></li>
+</ul>
+</li>
+<li><a href="#org418a8b0">4. Plan first season</a></li>
+<li><a href="#org9037454">5. Story</a>
+<ul>
+<li><a href="#orgbfe78d7">5.1. Introduction</a></li>
+<li><a href="#orgee6d947">5.2. Get to a resistence group</a></li>
+<li><a href="#orga22460f">5.3. Aufnhametest</a>
+<ul>
+<li><a href="#orgb274c90">5.3.1. Aufbau des Zuges</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org27abd0b">6. People-DB</a>
+<ul>
+<li><a href="#orgf4f2425">6.1. Thalia</a>
+<ul>
+<li><a href="#org604323d">6.1.1. Allgemeine Infos</a></li>
+<li><a href="#orgd326fcd">6.1.2. Rolle in der Astoria Gesellschaft</a></li>
+</ul>
+</li>
+<li><a href="#org7dccf61">6.2. Efstathios</a>
+<ul>
+<li><a href="#org39a5ef6">6.2.1. Allgemeine Infos</a></li>
+<li><a href="#org6231ff5">6.2.2. Rolle in der Astoria Gesellschaft</a></li>
+</ul>
+</li>
+<li><a href="#org7c320eb">6.3. Zeus</a>
+<ul>
+<li><a href="#orgd3a084d">6.3.1. Allgemeine Infos</a></li>
+<li><a href="#orgb970eae">6.3.2. Rolle in der Astoria Gesellschaft</a></li>
+</ul>
+</li>
+<li><a href="#org50c9251">6.4. Castor und Pollux</a>
+<ul>
+<li><a href="#orgd49079f">6.4.1. Allgemeine Infos</a></li>
+<li><a href="#orgc1aa33e">6.4.2. Rolle in der Astoria Gesellschaft</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orge70af05">7. Weapon-DB</a>
+<ul>
+<li><a href="#org5aca6a0">7.1. Maschinenpistole</a></li>
+</ul>
+</li>
+<li><a href="#org2ac7550">8. Enemy-DB</a>
+<ul>
+<li><a href="#org9d148f3">8.1. Soldat</a></li>
+</ul>
+</li>
+<li><a href="#org240efaa">9. Notes</a>
+<ul>
+<li><a href="#org2a23f40">9.1. Quentin/Melnik</a></li>
+<li><a href="#org32b5a92">9.2. Anton/Peter Hermann</a></li>
+<li><a href="#org132041f">9.3. Max/Ludwig Riegel</a></li>
+<li><a href="#orgb982aca">9.4. Nikals/Klara Vogel</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<style>
+:root {
+    --bg-col: #1c1e26;
+    --fg-col: #ffffff;
+    --accent: #e93c58;
+    --sec-accent: #e3e6ee
+}
+
+body, html {
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg-col);
+    color: var(--fg-col);
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+a, a:visited {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--sec-accent);
+}
+
+h1 {
+    color: var(--accent)
+}
+
+h2 {
+    color: var(--accent);
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.heading {
+    text-align: left;
+}
+
+.bar {
+    text-align: left;
+}
+
+.about {
+    text-align: left;
+}
+
+.blog {
+    text-align: left;
+}
+
+p.meta {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--sec-accent);
+    margin-top: -1em;
+}
+
+blockquote {
+  font: 14px/22px normal helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+} 
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin: 0px auto;
+  width: 100%;
+  text-align: center;
+}
+</style>
+
+<div id="outline-container-org1e69ab7" class="outline-2">
+<h2 id="org1e69ab7"><span class="section-number-2">1</span> Initial Ideas</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Group is part of a resistence group in nazi leipzig</li>
+<li>for first "season" they ultimatly have to free the MIMO (Mitteldeutsche Motorenwerke)</li>
+<li>for that they have to complete several prep missions, like rescuing CIs, gathering supplies, recon,&#x2026;</li>
+<li>there is magic in this world</li>
+<li>plays around 1945</li>
+<li>gang has their chars with their backstory, magic allowed, need a reason, whey they not at the front</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8ccc885" class="outline-2">
+<h2 id="org8ccc885"><span class="section-number-2">2</span> Backgroundinformation</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org7a4a1ce" class="outline-3">
+<h3 id="org7a4a1ce"><span class="section-number-3">2.1</span> 03.12.1943 bombing of Leizpig</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Royal Air Force</li>
+<li>in the early morning</li>
+<li>1800 deaths</li>
+<li>large parts of the city center destroyed</li>
+<li>facotrys experienced shortfalls and were moved or decentralized <b><b>(abilty to attack such a replacement)</b></b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb3ab1c8" class="outline-3">
+<h3 id="orgb3ab1c8"><span class="section-number-3">2.2</span> Erla Maschinenwerke</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>aircraft facotry (produced the Messerschmitt Bf109)</li>
+<li>three locations: Mockau, Abtnaundorf, Heiterblick</li>
+<li>one of the largest producers</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org87e6069" class="outline-3">
+<h3 id="org87e6069"><span class="section-number-3">2.3</span> Mitteldeutsche Motorenwerke (MIMO)</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>produced planemotors</li>
+<li><a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3.amazonaws.com%2Fgs-geo-images%2Fc91fd673-8f5a-4056-a6f4-9d7c928dcdd4.jpg&amp;f=1&amp;nofb=1">https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3.amazonaws.com%2Fgs-geo-images%2Fc91fd673-8f5a-4056-a6f4-9d7c928dcdd4.jpg&amp;f=1&amp;nofb=1</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org02ae63a" class="outline-3">
+<h3 id="org02ae63a"><span class="section-number-3">2.4</span> Leizpiger Meuten</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li><a href="https://blog.zeit.de/stoerungsmelder/2012/03/15/der-vergessene-widerstand-leipzigs-jugend-gegen-hitler_8255">https://blog.zeit.de/stoerungsmelder/2012/03/15/der-vergessene-widerstand-leipzigs-jugend-gegen-hitler_8255</a></li>
+<li>up to 1500 teenagers as oppositon to the nazis and the HJ</li>
+<li>mostly between 14 and 18</li>
+<li>moslty out of the working class with sozialdemocratic or communistic parents</li>
+<li>wore short leathertrousers and chequered hemden, colorful neckties</li>
+<li>badges were very important, for example skull-badges, or marriage rings, withour being married</li>
+<li>made up out of man and woman, but woman were degraded from the Stasi to sexual objects</li>
+<li>very good relations with other groups</li>
+<li>if they met the HJ, dann krieg</li>
+<li>Gestapo at first did not see them as a threat, but later prosecuted them</li>
+<li>wanted to scare the masses by sentencing a few for treason, a few of them landed in KZ's, some in <b><b>prison (maybe rescue one of them)</b></b> for a few years</li>
+<li>but no effect, so they started to execute mass arrests and build teenager KZ's (hard work, reeducation)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org305e753" class="outline-2">
+<h2 id="org305e753"><span class="section-number-2">3</span> Kommunitischer Wiederstand</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li><a href="http://prisma.blogsport.de/2017/01/11/kommunistischer-widerstand-in-leipzig-1943/">http://prisma.blogsport.de/2017/01/11/kommunistischer-widerstand-in-leipzig-1943/</a></li>
+<li>at first hope for a fast end, but that did not happen</li>
+<li>no more public actions, but holding up conntact to allies</li>
+<li>Lost battle of Stalingrad for Germany, new hope and continuation of resistence</li>
+<li>4 different groups, connected in discussion and so on, but not really connected because of different political views and the difficulty of the illegal work</li>
+</ul>
+</div>
+
+<div id="outline-container-orge5e4c6d" class="outline-3">
+<h3 id="orge5e4c6d"><span class="section-number-3">3.1</span> First group</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>Georg Schumann, Otto Engert, Kurt Kresse</li>
+<li>WW II is an imperialistic war, allies also responsible for the war</li>
+<li>because of that, they wanted to fight together with the sojets against the allies</li>
+<li>later demanded that the west victors should aknowledge the independece of Germany</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org298ca2e" class="outline-3">
+<h3 id="org298ca2e"><span class="section-number-3">3.2</span> Second Group</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>William Zipperer, Arthur Hoffman, Karl Jungbluth</li>
+<li>thought that that plan was follish and assumed a weakness of the left movement</li>
+<li>demanded instant end of the war and the creation of a frontline of all antifashistic powers to build a democratic afterwargermany</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcd119f2" class="outline-3">
+<h3 id="orgcd119f2"><span class="section-number-3">3.3</span> Third Group</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>Rudolf Hardtmann, Kurt Rosberf, Krl Plesse</li>
+<li>demanded instant, no compromiss end of the war</li>
+<li>Hardmann imprisoned in dezember of 1942, for two years, after that into the KZ</li>
+<li>under torture he disclosed othe resistence members <b><b>(maybe have to rescue him)</b></b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7938936" class="outline-3">
+<h3 id="org7938936"><span class="section-number-3">3.4</span> Fourth Group / Internationale Antifaschistisches Komitee (IAK)</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>e.g. Family Hauke, sowjet laborprisoners and POWs</li>
+<li>planed to act, when the red army arrived</li>
+<li>31.05.1944 IAK was "caught"</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>after the devestating bombing of leizpig the spread out fliers with the call to resistence, interrupt the warproduction and seek shelter in case of an attack instead of staying at the workplace</li>
+<li>multiple V-Maenner in the groups</li>
+<li>torture and blackmailing of the memebers</li>
+<li>Summer of 1944 coordinated an country wide strike against communist resistence</li>
+<li>a lot of memebers did not disclose unknown members and only admit to already known facts</li>
+<li>only Hardtmann also disclosed other stuff -&gt; tryed suicide on the 29.09.1944 out of dispair</li>
+<li>a lot of death sentences in the dezember of 1944</li>
+<li>leaders were executed on the 11. january 1945 in the yeard of the dresdner landgerichts</li>
+<li>some could flee in the 13th February of 1945 because a bombing got the prison (Alfred Schellenberger, Frit Gietzelt)</li>
+<li>Max hauke and Carl Riter were not able to be executed, because their record were burned <b><b>(taks for the gang)</b></b></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org418a8b0" class="outline-2">
+<h2 id="org418a8b0"><span class="section-number-2">4</span> Plan first season</h2>
+<div class="outline-text-2" id="text-4">
+<ol class="org-ol">
+<li>get to a resistence group</li>
+<li>initial test, get send to steal something</li>
+<li>have to find out, where person is held, maybe attend party and gather intel</li>
+<li>free CI (he knows how to attack)</li>
+<li>attack and overtake Erla Werke/MIMO</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org9037454" class="outline-2">
+<h2 id="org9037454"><span class="section-number-2">5</span> Story</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li><b><b>Charaktervorstellung folgt später, machen wir dann</b></b></li>
+</ul>
+</div>
+
+<div id="outline-container-orgbfe78d7" class="outline-3">
+<h3 id="orgbfe78d7"><span class="section-number-3">5.1</span> Introduction</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+Geschrieben wird das Jahre 1943, seit 10 Jahren herscht die NS-Regierung und seit 4 Jahren tobt der zweite Weltkrieg, welcher bereits Millionen an Leben forderte und wahrscheinlich noch weitere folgen werden. Ihr wohnt in Leipzig, einer kleinen Stadt in Sachsen, und genau wie der Rest von Deutschland leidet sie unter der unmenschlichen Regierung der Nazis. Doch euch geht es ein bisschen besser als den groesten Teil eurer Mitmenschen. Ihr seid nicht an der Front, sonder habt den Vorzug noch Zuhause leben zu koennen. Doch auch ihr waehnt euch unter den Augen der Nazis nicht vollkommen geborgen.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgee6d947" class="outline-3">
+<h3 id="orgee6d947"><span class="section-number-3">5.2</span> Get to a resistence group</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>can decide how their morning looks (ask them, what they are doing)</li>
+<li><p>
+if there is an opportunity to convince them to go to the address, do it, otherwise there is a letter under the door, which reads:
+</p>
+<blockquote>
+<p>
+Seid gegruest werter Leser,
+</p>
+
+<p>
+Sie wundern sich vielleicht, warum sie diesen Brief bekommen haben. Dies werde ich ihnen nicht hier erzaehlen.
+Wenn sie mehr erfahren wollen, dann seien sie gegen 19 Uhr unter der Bruecke ueber die Parthe an der Berliner Strase und warten sie dort.
+Wenn sie jemand mit "Hello there" anspricht, antworten sie "You are a bold one". Dies ist eine Art Passwort.
+Seien sie vorsichtig, dass ihnen niemand folgt.   
+</p>
+
+<p>
+Die Astoria Gesellschaft
+</p>
+</blockquote></li>
+<li>if the gang decides to go there at 19'o clock, they might have to hide, dice roll (7 oder weniger) if there is a patrol</li>
+<li>players meet each other, have time to talk with eachother</li>
+<li>können ihr aussehen Beschreiben</li>
+<li>after 15 minutes nobody comes, after 30 min still nobody, after 40 minutes somebody casually walking approaches from the side</li>
+<li>the person wears a long cloak with a hoad</li>
+<li>as she approaches a hand appears from the cloak and a little flame dances on it, spending a bit of light</li>
+<li>she says <b><b>"Hello there"</b></b> in a female voice</li>
+<li>after the playsers answer she says:</li>
+</ul>
+<blockquote>
+<p>
+Mein Name is Thalia, es freut mich, dass ihr der Einladung nachgekommen seid.
+Was ihr jetzt seht, ist streng geheim. Wenn ihr auch nur einer uneingeweihten Person etwas erzaehlt, ohne Erlaubnis oder triftigen Grund, wird es Konsequenzen geben.
+Aber folgt mir ersteinmal, mehr erfahrt ihr drinne.
+</p>
+</blockquote>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Thalia winkt mit ihrer hand und die Stein der Wand schieben sich klickend und klackend zur Seite und ein Gang tut sich vor euch auf. Der Boden besteht aus purem Stein und hier und da snd ein paar Flecken zu erkennen. An der Wand hängen Lichter an goldenen Haltern, ihr könnt aber nicht erkennen, ob es magischem oder elektrischen Ursprungs ist.</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>after some time the group reaches a massive wooden door</li>
+<li>Tahlia knocks, and a litle lid slides open</li>
+<li>A voice asks: <b><b>"Passwort"</b></b></li>
+<li>Thalia answers: <b><b>"Eisodos"</b></b></li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Die Tür sschwingt mit einem knarren auf und euch schlägt wohlige Wärme entgegen. Thalia tritt ein und gestikuliert euch, ihr zu folgen. Als ihr eintretet, seht ihr etwas, dass euch an eine Bar erinnert. An dem einen Ende des großen Raumes seht ihr ein ebensogroßen Kamin, indem ein Feuer lodert unf an eurer linken Seite findet sich eine Theke, mit Barhockern und einem Zapfhahn. HInter der Theke steht ein großgewachsener Mann ihn Frak und Fliege und wischt die Bar, hinter ihm türmen sich Regale mit allen möglichen Flaschen und Zutaten und Artefakten. Zu eurer rechten seht ihr eine Treppe, welche in eine obere Etage führt. Überall im Raum verteilt stehen Tische und Stühle, an denen sich auch manchmal ein paar Personen finden.</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Thalia winkt dem Bartender zu: "Sei gegrüßt Efstathios" und er winkt zurück: "Du auch Thalia. Wenn bringst du denn da mit?". "Ach dass sind die Neuen. (Zu der Gruppe) Der große da hinter der Bar ist Efstathios, keine Sorge, man gewöhnt sich an den Namen, unser Barkeeper."</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Thalia continues to the stairs</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Oben angekommen mündet die Treppe in einen weiteren Gang, welcher die Selbe Lihtquelle wie der EIngangsgang aufweist. Links und rechts gehen geschlossene Türen ab, hinter denen ihr im vorbeigehen Gemurmel vernehmen könnt. Thalia steuert zielstrebig auf die hintereste Tür zu und stößte diese mit Elan auf, sobald sie ereicht wurde.</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Hinter der Tür findet sich ein schon etwas geräumiger Raum mit einem massiven Holzschreibtisch in der Mitte, mit einem große Ohrensessel, indem ein Mann thront. Die Wände sind hinter Bücherregalen verborgen, indem ihr die Gesamte Weltgeschichte vermutet, sowie einige Artefakte. Auch findet sich in dem Raum ein antik aussehender Globus und zwei weitere Personen, die anscheinend gerade mit der Person hinter dem Schreibtisch in ein Gespräch vertieft waren, welches allerdings abrupt verstummt.</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Von dem Mann im Sessel geht eine Authorität aus, wie ihr sie nur selten vernommen habt, auch wenn seine Statur diese nicht unbedingt vernehmen lässt. Er ist eher normal gebaut mit einer verwuschelten braunhaarigen Frisur und stechend blauen Augen, die, wie es euch scheint, Blitze schleudern könnten. Bei den beiden anderen Personen handlet es sich um einen Mann und eine Frau, der Mann größer als die Frau, beide mit kurzen blonden Haaren. Der Mann trägt sie allerdings nach hinten gegelt und die Frau einfach so. Beide wirken jedoch sehr Jung im vergleich zu dem Mann hinter dem Schreibttisch.</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Die beiden drehen sich zu euch um und der Mann hinter dem Schreibtisch erhebt sich und breitet die Arme aus: "Seid gegrüßt, ich hoffe Thalia hat euch nicht zu lange im Kalten stehen gelassen. Mein Name ist Zeus. Die beiden etwas grummelig aussehenden hier sind die Geschwister Castor und Pollux. Ich heiße euch Willkommen, nehmt doch bitte Platz und lasst uns ein wenig reden." Ein ein paar Stühle erscheinen, von denen ihr schwören könnt, dass sie vorher nicht da waren. "Castor und Pollux, wartet doch bitte draußen." Castor und Pollux schaen euch noch einmal an und verschwinden dann durch die Tür und ziehen diese hinter sich zu. Eine Stille kehrt ein. Man hört keine Straßengeräusche und kein Gemurmel. Es seid bloß ihr im Raum, zusammen mit dem Mann namens Zeus und Thalia. Nach einer kurzen Weile bricht Zeus das Schweigen und sagt:</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">"Ihr fragt euch doch sicherlich, was ihr hier sollt. Ihr bekommt einen kommischen Brief und dann steht ihr da noch eine ganze Weile im kalten in einem Kanal, und kommt in dieses komische Gebäude mit dne komischen Menschen mit komischen Namen. Ich will euch das alles erklären, aber ohne euch Angst machen zu wollen, entweder ihr geht hier als ein Teil unserer Gruppe raus oder ihr geht hier ohne ERinnerung an das ganze hinaus. Ich weiß, dass ihr alle keine Fans des Regiems seid und wir genausowenig. Deswegen seid ihr hier. Aber ich rede hier die ganze ZEit, und weiß nichteinmal euren Namen, stellt euch doch mal bitt vor. Dann lernt ihr euch auch gegnseitig kennen."</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Charaktervorstellung</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">"Nungut, meinen Namen habt ihr ja schon vernommen. Ich bin Zeus und ich bin so eine Art Präsident für diese Gesellschaft. Aber fangen wir von Vorne an. Was sind wir überhaupt? Wir sind bunt zusammengewürfelt aus allen Rassen, Magiern und nicht Magiern, Männer und Frauen. Wir existieren seit hunderten von Jahren, mal mehr im Vordergrund, mal im Untergrund wie nun. Wir haben uns dem Schutz des Lebens und der Welt verpflichtet, sei es im Jetzt, in der Vergangenheit oder in der Zukunft. Nun, im Moment eher im Jetzt" Er lacht ein wenig. "Wie ihr schon an unseren Namen erkennen könnt, haben wir unseren Ursprung im alten Griechenland, wenn auch keiner mehr aus dieser Zeit am Leben ist. Manche Namen hier sind von einer Position bestimmt, manche nicht, dass kommt drauf an. Wenn ihr uns beitretet werden ihr es schon mitbekommen. Habt ihr dazu ersteinmal fragen? Ansonsten komme ich dazu, warum ihr hier seid."</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Spieler können hier Fragen stellen</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">"So, warum seid ihr hier. Will jemand raten?</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Spieler können raten (falls sie richtig raten, einfach das fehlende ergänzen)</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">"Wie ich ja bereits erwähnt habe, haben wir uns dem Schutz des Lebens und der Welt verschrieben, welches ja gerade durch diesen größenwahnsinnigen Diktator ein bisschen in Gefahr ist. Unsere Aufgabe ist es die Welt wieder in Balance zu bringen, Frieden wieder herzustellen und diesem Regiem der Gar aus zu machen. In unserem Kampf gegen diese Bedrohung sind uns allerdings einige unserer Agenten und Verbündeten verloren gegangen, sei es durch Gefangenschaft, Tot oder einfaches verschwinden, und der Gegner ist dazu noch sehr mächtig. Deswegen sind wir in Bedarf für weitere Kräft. Ihr seid hier, weil wir euch für unsere Sache gewinnen und in unsere Ränge aufnhemen wollen. Gibt es dazu noch fragen? Ich kann verstehe, wenn das jetzt auf gleich sehr viel und ihr etwas Zeit braucht die Informationen zu verarbeiten. Wenn ihr eine entscheidung getroffen habt, kommt sprecht mich an. Ich bitte euch bloß nicht zu viel Zeit daür zu beanspruchen. Die Uhr tickt." Er setzt sich wieder an seinen Schreibtisch und beugt sich über ein paar Papiere. Die Tür schwingt wieder auf.</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>ab hier können die Spieler reden und sich frei im Haus bewegen.</li>
+
+<li>wenn sie sich entschließen teilzunehmen:</li>
+<li>Tahlia bei Zeus im Raum</li>
+<li>bedankt sich Zeus für ihre Bereitschaft</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">"Bevor ihr aber vollkommen in unserer Organisation aufgenommen seid, müsst ihr ein Aufnahmeritual absolvieren, aber keine Sorge, ihr müsst kein Blutopfer erbringen oder so. Ich will, dass ihr etwas stehlt. Thalia, weiße du unsere Rekruten ein."</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Thalia stellt sich vor euch und fängt an zu reden: "So, um eure Immatrikulation abzuschließen, müsst ihr einen Gegenstand stehlen und diesen bei Efstathios abliefern. Der Gegenstand ist ein Aktenkoffer mit spezifischen INformation, welche wir für unsere Operationen gebrauchen können. Wenn es nach uns ginge, währt ihr nicht sofort in eine reale Operation geschmissen wurden, aber die Umstände erfordern dies leider. Falls ihr entdeckt und festgenommen werdet, ist das ein Problem für euch, ihr habt keine Beweise für unsere Existenz. Falls ihr uns verratet, werdet ihr die Konsequenzen schon erfahren. Aber erstmal weiter im Text. Der Aktenkoffer findet sich auf einem Zug, welcher morgen Mittag im Hauptbahnhof hält. In einem der Abteile sitzt ein Vertretter der Regierung, welcher diesen mit sich führt. Ihr sollt den Aktenkoffer, wie schon gesagt un euren Besitz bringen, wie ihr das jedoch anstellt ist euch überlassen, überrascht uns. Während der Zug hält, ist der jeweilige Bahnsteig abgesperrt und bewacht. Das Abteil, in welchem der Gesante sitzt ist uns jedoch nicht bekannt. Alles was wir noch wissen ist, dass der Koffer wahrscheinlich nicht einfach rumsteht, er wird wahrscheinlich in einem Tresor aufbewahrt verwahrt sein. Falls ihr Ausrüstung benötigt, könnt ihr diese bei euch Zuhause besorgen, oder euch bei Efasthios erkundigen. Wir wünschen euch viel Erfolg." Sie lächelt als sie diese letzen Worte sagt, und Zeus nickt zustimmend.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orga22460f" class="outline-3">
+<h3 id="orga22460f"><span class="section-number-3">5.3</span> Aufnhametest</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>der Bahnhof ist frei betretbar, jedoch stehen Beamte an den EIngängen, die KOntrollen durchführen</li>
+<li>der Bahnsteig ist nur Authorisierten Personal zugänglich, auf dem Hauptbahnhof läuft ein Sicherheitsbamter rum, welcher einen solchen Ausweis bei sich trägt, Spieler können diese Info erfahren, wenn sie ihn belauschen können. Dies ist möglich, wenn sie über den Bahnsteig gehen. <b><b>Probenwert entscheiden on the fly</b></b></li>
+<li>wenn sie durch den Checkpoint gehen, können sie hören, dass der Zug in 30 Minuten losfährt <b><b>Probenwer entscheiden on the fly</b></b></li>
+<li>können über die Schienen kommen, dort nicht bewacht, müssen aber Weg in den Zug finden</li>
+</ul>
+</div>
+
+<div id="outline-container-orgb274c90" class="outline-4">
+<h4 id="orgb274c90"><span class="section-number-4">5.3.1</span> Aufbau des Zuges</h4>
+<div class="outline-text-4" id="text-5-3-1">
+<ul class="org-ul">
+<li>wie ein normaler Zug aus der Zeit</li>
+<li>sieht gepflegt und verhältnissmäßig Prunktvoll, mit Verzierungen an der Seiten und NS-Flaggen</li>
+<li>zwischen den Wagons sind lücken, wo diese zusammen gekoppelt sind</li>
+<li>besteht aus 6 Wagons und einer Lok</li>
+
+<li>1. Wagon (der am Bahnsteig)
+<ul class="org-ul">
+<li>Lagerwagon, können Geld finden</li>
+<li>nichts großes hier</li>
+<li>Luke aufs Dach</li>
+</ul></li>
+<li>2. Wagon
+<ul class="org-ul">
+<li>Waffenkammer</li>
+<li>Maschinenpistolen</li>
+<li>Pistolen</li>
+<li>Degen</li>
+<li>Munitionskisten</li>
+<li>Luke am Dach</li>
+</ul></li>
+<li>3. Wagon
+<ul class="org-ul">
+<li>Speisewagon</li>
+<li>an sich geräumig</li>
+<li>Bar an der Seite, die nicht am Bahnsteig ist, mit Barman</li>
+<li>Tische mit Blumensträußern und Kerzen</li>
+<li>2 Personen an einem Tisch</li>
+<li>Luke am Dach</li>
+</ul></li>
+<li>4. Wagon
+<ul class="org-ul">
+<li>ein Büro</li>
+<li>Schreibtisch mit prunkvollen Stuhl</li>
+<li><b><b>vlt. sitzt der Gesante am Tisch und arbeitet</b></b></li>
+<li>vor Schreibtisch steht auch ein Stuhl, blanker Holzstuhl, nicht fancy</li>
+<li>ein Bücherregal mit Lederbändern davor, damit Bücher nicht rausfallen</li>
+<li>BEistelltisch mit Vase</li>
+<li>hinter Schreibtisch hängt ein großes Gemälde mit zwei Kerzenhaltern links und rechts <b><b>Perceptioncheck - können rausfinden, dass das Gemälde nicht normal aufgehängt ist, sondern an zwei Scharnieren</b></b></li>
+<li>jeweils ein Soldat an den Wagoneingängen, jedoch nur eine Pistole</li>
+</ul></li>
+<li>5. Wagon
+<ul class="org-ul">
+<li>Passagierwagon</li>
+<li>Holzbänke, insgesamt 5 Soldaten mit Maschinengewehren</li>
+<li>über ihren Köpfen sieht man Gepäckablagen mit ein paar Koffern</li>
+<li>an der Decke wieder eine Luke</li>
+</ul></li>
+<li>6. Wagon
+<ul class="org-ul">
+<li>Schlafwagon</li>
+<li>Luke an der Decke</li>
+<li>Abgedunkelt</li>
+<li>Doppelstockbetten an den Seiten</li>
+<li>sehr schmaler Gang zwischen den Betten</li>
+<li>es schlafen insgesamt 3 Personen</li>
+<li><b><b>Stealthchecks</b></b> SOnst wachen sie auf</li>
+<li>allerdings haben die Personen keine Waffen und schlafen in grauen, kratzig aussehenden Onesies</li>
+</ul></li>
+<li>Lokomotive (am Gleißende Richtung Ausfahrt)
+<ul class="org-ul">
+<li>Großes Stahlgetüm</li>
+<li>innen ist ein Fahrer und ein Heizer, bereiten sich auf Ausfahrt vor</li>
+</ul></li>
+
+<li>wissen Passwort fürs Astoria nicht, außer sie haben es sich gemerkt</li>
+<li>wenn sie drinnen sind, winkt Efasthios sie zu sich</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Efasthios schleudert ein paar Becher durch die Gegend, gießt hier und da etwas in Gläßer und schaut die Spieler an: "Na, wart ihr erfolgreich?"</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">"Ich wusste, dass ihr es schaffen könnt, herzlichen GLückwunsch. Erlaubt mir, euch als erster zu feiern." Er stellt jedem von euch ein Glas hin, indem euer Lieblingsdrink ist. Er lächelt verschmitzt</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Ende erste Session</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org27abd0b" class="outline-2">
+<h2 id="org27abd0b"><span class="section-number-2">6</span> People-DB</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgf4f2425" class="outline-3">
+<h3 id="orgf4f2425"><span class="section-number-3">6.1</span> Thalia</h3>
+<div class="outline-text-3" id="text-6-1">
+</div>
+<div id="outline-container-org604323d" class="outline-4">
+<h4 id="org604323d"><span class="section-number-4">6.1.1</span> Allgemeine Infos</h4>
+<div class="outline-text-4" id="text-6-1-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Echter Name</td>
+<td class="org-left">Sarah Schuchard</td>
+</tr>
+
+<tr>
+<td class="org-left">Geschlecht</td>
+<td class="org-left">Weiblich</td>
+</tr>
+
+<tr>
+<td class="org-left">Alter</td>
+<td class="org-left">28</td>
+</tr>
+
+<tr>
+<td class="org-left">Groese</td>
+<td class="org-left">1,63m</td>
+</tr>
+
+<tr>
+<td class="org-left">Gewicht</td>
+<td class="org-left">60kg</td>
+</tr>
+
+<tr>
+<td class="org-left">Statur</td>
+<td class="org-left">Zierlich</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgd326fcd" class="outline-4">
+<h4 id="orgd326fcd"><span class="section-number-4">6.1.2</span> Rolle in der Astoria Gesellschaft</h4>
+<div class="outline-text-4" id="text-6-1-2">
+<ul class="org-ul">
+<li>kuemmert sich um Anheuern und Auftraege</li>
+<li>Involviert aufjedenfall</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7dccf61" class="outline-3">
+<h3 id="org7dccf61"><span class="section-number-3">6.2</span> Efstathios</h3>
+<div class="outline-text-3" id="text-6-2">
+</div>
+<div id="outline-container-org39a5ef6" class="outline-4">
+<h4 id="org39a5ef6"><span class="section-number-4">6.2.1</span> Allgemeine Infos</h4>
+<div class="outline-text-4" id="text-6-2-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Echter Name</td>
+<td class="org-left">Marvin Schäfer</td>
+</tr>
+
+<tr>
+<td class="org-left">Geschlecht</td>
+<td class="org-left">Männlich</td>
+</tr>
+
+<tr>
+<td class="org-left">Alter</td>
+<td class="org-left">39</td>
+</tr>
+
+<tr>
+<td class="org-left">Größe</td>
+<td class="org-left">1.90m</td>
+</tr>
+
+<tr>
+<td class="org-left">Gewicht</td>
+<td class="org-left">90kg</td>
+</tr>
+
+<tr>
+<td class="org-left">Statur</td>
+<td class="org-left">Muskulös, Breit</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org6231ff5" class="outline-4">
+<h4 id="org6231ff5"><span class="section-number-4">6.2.2</span> Rolle in der Astoria Gesellschaft</h4>
+<div class="outline-text-4" id="text-6-2-2">
+<ul class="org-ul">
+<li>Barkeeper und Secretkeeper der Astoria Gesellschaft</li>
+<li>sehr involviert</li>
+<li>einer der Gründer</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7c320eb" class="outline-3">
+<h3 id="org7c320eb"><span class="section-number-3">6.3</span> Zeus</h3>
+<div class="outline-text-3" id="text-6-3">
+</div>
+<div id="outline-container-orgd3a084d" class="outline-4">
+<h4 id="orgd3a084d"><span class="section-number-4">6.3.1</span> Allgemeine Infos</h4>
+<div class="outline-text-4" id="text-6-3-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Echter Name</td>
+<td class="org-left">Nikolaus Armbruster</td>
+</tr>
+
+<tr>
+<td class="org-left">Geschlecht</td>
+<td class="org-left">Männlich</td>
+</tr>
+
+<tr>
+<td class="org-left">Alter</td>
+<td class="org-left">45</td>
+</tr>
+
+<tr>
+<td class="org-left">Größe</td>
+<td class="org-left">1.75m</td>
+</tr>
+
+<tr>
+<td class="org-left">Gewicht</td>
+<td class="org-left">70kg</td>
+</tr>
+
+<tr>
+<td class="org-left">Statur</td>
+<td class="org-left">Normal</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgb970eae" class="outline-4">
+<h4 id="orgb970eae"><span class="section-number-4">6.3.2</span> Rolle in der Astoria Gesellschaft</h4>
+<div class="outline-text-4" id="text-6-3-2">
+<ul class="org-ul">
+<li>Gründungsmitglied</li>
+<li>Vorsitzender</li>
+<li>sehr involviert</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org50c9251" class="outline-3">
+<h3 id="org50c9251"><span class="section-number-3">6.4</span> Castor und Pollux</h3>
+<div class="outline-text-3" id="text-6-4">
+</div>
+<div id="outline-container-orgd49079f" class="outline-4">
+<h4 id="orgd49079f"><span class="section-number-4">6.4.1</span> Allgemeine Infos</h4>
+<div class="outline-text-4" id="text-6-4-1">
+<p>
+Castor:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Echter Name</td>
+<td class="org-left">Franz Alscher</td>
+</tr>
+
+<tr>
+<td class="org-left">Geschlecht</td>
+<td class="org-left">Männlich</td>
+</tr>
+
+<tr>
+<td class="org-left">Alter</td>
+<td class="org-left">25</td>
+</tr>
+
+<tr>
+<td class="org-left">Größe</td>
+<td class="org-left">1.80m</td>
+</tr>
+
+<tr>
+<td class="org-left">Gewicht</td>
+<td class="org-left">75kg</td>
+</tr>
+
+<tr>
+<td class="org-left">Statur</td>
+<td class="org-left">Stabil</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Pollux:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Echter Name</td>
+<td class="org-left">Cordula Alscher</td>
+</tr>
+
+<tr>
+<td class="org-left">Geschlecht</td>
+<td class="org-left">Weiblich</td>
+</tr>
+
+<tr>
+<td class="org-left">Alter</td>
+<td class="org-left">25</td>
+</tr>
+
+<tr>
+<td class="org-left">Größe</td>
+<td class="org-left">1.60m</td>
+</tr>
+
+<tr>
+<td class="org-left">Gewicht</td>
+<td class="org-left">60kg</td>
+</tr>
+
+<tr>
+<td class="org-left">Statur</td>
+<td class="org-left">Normal</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgc1aa33e" class="outline-4">
+<h4 id="orgc1aa33e"><span class="section-number-4">6.4.2</span> Rolle in der Astoria Gesellschaft</h4>
+<div class="outline-text-4" id="text-6-4-2">
+<ul class="org-ul">
+<li>im inner circle</li>
+<li>ywei der besten Agenten</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge70af05" class="outline-2">
+<h2 id="orge70af05"><span class="section-number-2">7</span> Weapon-DB</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+<a href="https://imgur.com/a/aO8yx">https://imgur.com/a/aO8yx</a>
+</p>
+</div>
+
+<div id="outline-container-org5aca6a0" class="outline-3">
+<h3 id="org5aca6a0"><span class="section-number-3">7.1</span> Maschinenpistole</h3>
+<div class="outline-text-3" id="text-7-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Weapon</th>
+<th scope="col" class="org-right">Range</th>
+<th scope="col" class="org-right">HIT</th>
+<th scope="col" class="org-right">Damage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Maschinenpistole</td>
+<td class="org-right">50</td>
+<td class="org-right">+3</td>
+<td class="org-right">1d6</td>
+</tr>
+
+<tr>
+<td class="org-left">Pistole</td>
+<td class="org-right">30</td>
+<td class="org-right">+5</td>
+<td class="org-right">1d4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2ac7550" class="outline-2">
+<h2 id="org2ac7550"><span class="section-number-2">8</span> Enemy-DB</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-org9d148f3" class="outline-3">
+<h3 id="org9d148f3"><span class="section-number-3">8.1</span> Soldat</h3>
+<div class="outline-text-3" id="text-8-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">AC</th>
+<th scope="col" class="org-right">HP</th>
+<th scope="col" class="org-right">STR</th>
+<th scope="col" class="org-right">DEX</th>
+<th scope="col" class="org-right">CON</th>
+<th scope="col" class="org-right">INT</th>
+<th scope="col" class="org-right">WIS</th>
+<th scope="col" class="org-right">CHAR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">11</td>
+<td class="org-right">25</td>
+<td class="org-right">14</td>
+<td class="org-right">11</td>
+<td class="org-right">12</td>
+<td class="org-right">8</td>
+<td class="org-right">10</td>
+<td class="org-right">9</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org240efaa" class="outline-2">
+<h2 id="org240efaa"><span class="section-number-2">9</span> Notes</h2>
+<div class="outline-text-2" id="text-9">
+</div>
+<div id="outline-container-org2a23f40" class="outline-3">
+<h3 id="org2a23f40"><span class="section-number-3">9.1</span> Quentin/Melnik</h3>
+<div class="outline-text-3" id="text-9-1">
+<ul class="org-ul">
+<li>morgens in Dojo</li>
+<li>1.51m</li>
+<li>rote haare</li>
+<li>rote Augen</li>
+<li>weise haut</li>
+<li>weiser langer mantel, rotes innenfutter, gesteppt mit Phoenix auf dem ruecken</li>
+<li>feminin</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org32b5a92" class="outline-3">
+<h3 id="org32b5a92"><span class="section-number-3">9.2</span> Anton/Peter Hermann</h3>
+<div class="outline-text-3" id="text-9-2">
+<ul class="org-ul">
+<li>Obdachlos, sucht essen</li>
+<li>maennlich</li>
+<li>1.83m</li>
+<li>blaue augen</li>
+<li>schwarze haare</li>
+<li>20 jahre</li>
+<li>muskuloes</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org132041f" class="outline-3">
+<h3 id="org132041f"><span class="section-number-3">9.3</span> Max/Ludwig Riegel</h3>
+<div class="outline-text-3" id="text-9-3">
+<ul class="org-ul">
+<li>steht 13 Uhr auf</li>
+<li>sitzt vor Zelt, spielt Musik</li>
+<li>1.80m</li>
+<li>lange haare</li>
+<li>bart</li>
+<li>ungepflegt</li>
+<li>schaebig gekleidet</li>
+<li>komischer vogel</li>
+<li>sommersprossen</li>
+<li>30</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb982aca" class="outline-3">
+<h3 id="orgb982aca"><span class="section-number-3">9.4</span> Nikals/Klara Vogel</h3>
+<div class="outline-text-3" id="text-9-4">
+<ul class="org-ul">
+<li>geht Spazieren</li>
+<li>1.75m hohe frau</li>
+<li>junges mittleres alter</li>
+<li>rote Haare</li>
+<li>blaue augen</li>
+<li>muskuloes</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Adrian Eichelbaum</p>
+<p class="date">Created: 2021-01-16 Sat 15:57</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

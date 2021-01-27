@@ -1,0 +1,409 @@
+# Sternentstehung und Sternentwicklung
+**Stern:**
+
+* selbstleuchtende Gaskugeln mit hoher Masse und Temperatur
+* Korona, Chromosspähre, Photosspähre, Innere
+* Corona und Chromosspähre bilden Atmo
+* Kernfusion
+* Hauptreihenstadium, Wasserstoff- fusionieren zu Heliumkernen
+* enstehen in Materiewolken (z.B. Orionnebel)
+
+## Erscheinungsformen der Interstellaren Materie (ISM)
+
+### Emissionsnebel
+* senden selbst Licht aus
+* Gas wird durch junge heiße Sterne zum Leuchten angeregt
+
+z.B. Orionnebel
+
+### Dunkelwolken
+* sehr dichte Ansammlung von Staub
+* das Licht dahinterliegender Sterne wird von dem Staub absorbiert
+
+z.b. Pferdekopf im Orionnebel
+
+### Reflexionsnebel
+* lockere Ansammlung von Staub
+* dieser Staub reflektiert das Licht umliegender Sterne
+
+z.B. Plejaden im Sternbild Stier
+
+## Optischer Dopplereffekt
+Bewegt sich die Lichtquelle auf den Beobachter zu, werden die Absobtionslinien im Spektrum in den kurzweliggeren blauen Bereich verschoben und bewegt sich die Lichtquelle von dem Beobachter weg, werden die Absobtionslinien in den langwelgeren roten Bereich verschoben.
+
+Trinkst nen Kurzen, wirste blau
+
+## Das interstellare Gas
+* besteht hauptsächlich aus Wasserstoff
+* entdeckt Anfang des 20. Jhs durch die sogenannten ruhenden Absorbtionslinien
+
+### Existenzformen des Wasserstoffs (WS)
+1. **atomarer WS:**
+
+	* direkter Nachweis  durch die Radiostrahlung im Wellenlängenbereich von 21cm
+	* in einer sehr dünnen Schicht in der Milchstraßenebene
+	* **Dichte:** ca. 1 Atom/cm^3
+	* **Strahlungstemp.:** 10 K bis 150 K
+
+2. **molekularer WS:**
+	* Nachweis:
+		* in heißen H2-Wolken Linienstrahlung des molekulaen Wasserstoffs im Infrarot beobachten
+		* in kalten H2-Wolken können H2-Moleküle durch die Absorption im Ultravioleten Spektralbereich zu beobachten 
+		* Beobachtung der Radiostrahlng von C02
+	
+	* Ergebnisse:
+		* rießige Wolken mit großer Masse und niedriger Temp.
+		* Durchmesser bis zu 1 Parsec(pc)
+	
+3. **ionisierter WS (H-II-Region):**
+	* Nachweis direkt im optischen Bereich
+	* sendet selbst Licht aus
+	* existiert in der Umgebung junger heißen Sternen (Oberflächentemp bis 27 Tausend Kelvin)
+	* die Sterne senden so viel UV-Strahlung aus, sodass WS selbst zum leuchten anklingt
+
+## Der interstellarer Staub
+* existiert in FOrm von Dunkelwolken und Reflektionsnebel
+* Staub verändert Sternlicht in dreierlei Weise:
+	1. wird geschwächt, je stärker desto kürzer die Wellenlänge (blau stärker als rotes abgeschwächt)
+	2. verfärbt 
+	3. oder polarisiert, bestimmte Schwingungsebenen werden herausgefiltert
+
+## Zustandsgrößen von Sternen
+* Temperatur
+* Leuchtkraft
+* Radius
+* Masse
+* Dichte
+* alle Abhängig von der Zeit
+
+### Temperatur von Sternen
+* **Bestimmung** durch Einordnung von Sternen in jeweilige Spektralklassen
+
+* Intensität der Balmerserie steigt bis A, dort maximal, dann wieder abfall
+* Temperatur nimmt von O zu M ab
+
+O B A F G K M
+
+Oh Be A Fine Girl Kiss Me
+
+* können alle nochmal aufgeteilt werden (0-9)
+* **Klassifikationskriterien:**
+	* Intesität der Balmerserie des Wasserstoffs (Linienfolge des Wasserstoffspektrums im Sichtbaren Bereich)
+	* Linien H und K des ionisierten Calciums
+	* bei O Sternen die Linien des ionisierten Heliums und am Ende der SPektralsequenzdie Metallinien und Molekülbanden
+
+**Zusammenhang zwischen Tmp. und Balmer Serie**
+
+Damit die Balmerserie des Wasserstoffs in Absorption vorkommen kann, müssen sich genügend viele Wasserstoffatome auf dem ersten angeregten Energieniveau befinden. Dafür sind Zusammenstöße zwischen den Atomen verantwortlich, welche von der Temperatur verantwortlich sind. Ist die Temperatur zu hoch (O-Sterne), dann sind die meisten Wasserstoffatome ionisiert. Ist die Temperatur zu niedrig (K- und M-Stern), dann befinden sich die meisten Wasserstofatome in energetischen Grundzustand. Bie den A-Sternen liegt ideale Temperatur vor, damit das erste angeregte ENergieniveau vin sehr vielen Wasserstoffatomen besetzt ist.
+
+**Temperaturbestimmung über den Farbenindex:**
+
+* Scheinbare Helligkeit gibt an wie hell ein Stern auf der Erde erscheint
+* **Formelzeichen:** m
+* **Einheit:** Größenklasse (magnitudo) 
+
+-26^m(Sonne) .... -1^m 0 1^m .... 6^m 7^m .... 30^m
+
+-26^m bis 6^m mit bloßem Auge
+
+7^m bis 30^m Bloß mit Teleskop
+
+* Scheinbare Helligkeit ist 
+	1. von Entfernung des Sterns abhängig
+	2. Leuchtkraft
+
+**Fl = mk - ml**
+
+mk Scheinbare Helligkeit im kurzwelligen Bereich (B)
+
+ml Scheinbare Helligkeit im langwelligen Bereich (V)
+
+O- und B-Sterne haben einen negativen Farbindex
+
+Für die F-, G-, K-, M-Sterne ist ein positiver FArbindex zu erwarten
+
+Für die A0-Sterne ist der Farbindex null
+
+### Leuchtkraft von Sternen (Strahlungsleistung)
+
+**absolute Helligkeit:** M [mag]
+
+Die absoute elligkeit eines Sterns gibt an, wie hell ein Stern in der Entfernung von 10 Parsec von der Erde erscheint
+
+**m - M = 5 lg(r) - 5**
+
+Rechnung siehe HEfter
+
+### Entfernung
+
+Paralaxenwinkel ist der halbe Winkel zwischen den Blickrichtungen von zwei gegenüberliegenden Punkten der Erdbahn zum Stern (p in "; 1" = 1/3600°)
+
+sin(p) = 1AE/r
+
+r = 1AE/sin(r)
+
+siehe Hefter
+
+Wenn ein STern sich unter einem Paralxenwinkel von 1" befindet, dann nennt man die ENtfernung 1 Parsec
+
+r = 1/p (p immer in Bogensekunden einsetzen)
+
+### Masse
+
+* Doppelsternsysteme besonders gut für Massebestimmung geeignet
+
+**Arten von Doppelsternsystemen**
+
+* physische Doppelsterne:
+	* Komponente (Sterne) haben gleiche Entfernung von der Sonne -> räumlich dicht beieinander
+	* möglich, dass sie sich unter Enfluss ihrer Gravitation um einen gemiensamen Schwerpunkt bewegen
+	* Dauer des vollständigen Umlaufs abhängig von ihrem Abstand
+	* Umlaufbewegug nur dann zu eobachten, wenn Ummlaufzeit nicht allzu groß
+	* Vorraussetzung dafür: Komponenten in Fernrohr deutlich voneinander trennbar sind
+
+* visuelle Doppelsterne:
+	* beide Komponenten sind deutlich im Fernrohr trennbar
+
+* optische Doppelsterne:
+	* unterscheidlich weit von der Sonne entfernt
+	* keine gravitativen Wechselwirkungen
+	* nur scheinbarer Doppelstern
+
+* spektroskopische Doppelsterne
+	* Doppelsterne, die durch periodische Verscheibung der Spektrallinien (verursacht durch das abwechselnde Zubewegen und wegbewegen auf den Beobachter) entdeckt werden
+	* optischer Dopplereffekt
+
+* aus **scheinbarer Bahn** lässt sich Bahnhalbachse a in Bogensekunden bestimmen
+* Umlaufzeit T und Bahnbewegung lässt sich meist nur mithilfe von sehr alten Daten messen
+
+**Kepler-Gleichung**
+
+M1 + M2 = (4Pi^2^/G) * (a^3^/T^2^)
+
+M = Masse
+
+T = Umlaufzeit
+
+a = große Bahnhalbachse
+
+Wenn die Sternmassen M1 und M2  in VIelfachen von MSonne, T in Ielfachen von Jahren und a in Vielfachen von AE gegeben, so erhält man:
+
+M1 + M2 = a^3^/T^2^
+
+**Schwerpunktsatz**
+
+M1/M2 = a2 / a1
+
+**Rechnung siehe HEfter**
+
+### Sternradius
+
+**Stefan-Boltzsman-Gesetz**
+
+* mit Temperatur und Leuchtkraft
+
+**Gleichung, Rechnung siehe Hefter**
+
+### mittlere Dichte
+
+Ro = m/V = m/(4/3)Pi*r^3^
+
+# Das HRD (Hertzsprung-Russel-Diagramm)
+
+## Wie verhalten sich die Zustandsgrößen in den Besetzungszonen
+
+für die Hauptreihen gilt:
+
+* Temp und Leuchtkraft kann man ablesen
+* für **Hauptreihe** gilt **Masse-Leuchtkraft-Beziehung**
+	* Leuchtkraft ist proportional zur dritten Potenz der Masse (L~m^3^)
+* Sterne mit großer Leuchtkraft in der Hauptreihe haben großen Radius
+* wenn Sterne großen Radius haben, dann kleine mittlere Dichte
+* für **Riesen** gilt:
+* Sterne im Gebiet der Riesen haben die größten Radien
+* wenn großer Radius, kleine mittlere Dichte
+* Masse keine eindeutige Aussage möglich
+* für **Zwege** gilt:
+* kleiner Radius
+* größten mittleren Dichten
+* keine eindeutige Aussage über Masse möglich
+
+# Sternentstehung und entwicklung
+
+**Hier Afuzeichnungen von Max, Sternentstheung und Entwicklung**
+
+## 2. Riesenstadium
+
+* Kern zieht sich zusammen (kontrahiert) und Hülle dehnt sich aus
+* Wasserstoffvoräte in der zntralen Brennstoffzone aufgebraucht
+* STerne können Energiebedarf allerdings durch Wasserstofffusion in einer schalenförmigen Region um Kern herum decken
+
+### Massereiche Sterne
+
+* bei Austritt aus Hauptreihe relativ geringe Zentrumsdichte
+* können dadurch durch Kontraktion kernnaher Regionen Gravitationsenergie in innere Energie umwandeln und dadurch Temp erhöhen
+* bei 10^8^K beginnt Fusion von Helium
+
+-> erneut eine relativ lange Stabilitätsphase
+
+* Wasserstoffusion nicht mehr im Zentrum, sondern in wasserstoffreicher Schale des Sterns
+* falls Heliumvorräte ausgehen erneut Kontraktionsvorgang -> erneute Temoerhöhung -> Kernfusion schwerer Teilchen
+* Stern gleicht Zwiebl, mehrere Brennzonen übereinander
+* nur möglich bis Kernfusion von Eisen, dannach ENergiebilanz der Fusion negativ
+* Stern hat **2 Energiequellen**
+	1. Kernfusion
+	2. Gravitationsenergie
+* Sterne mit 12 Sonnenmassen
+	- am Ende der Fusionskette: ZUstand wo Eisenkugel um Sternmittelpunkt
+	- durch Kontraktion erhäht sich Zentraltemperatur und Kernteilchen lagenr sich an Eisenatomkerne, jedoch keine Fusionsenergie freigesetzt, sondern verbraucht
+	- -> Temperatur im Zentrum sinkt sehr schnell und Stern stürzt in sich zusammen
+	- äußere Teilchen werden an den Schwellen der inneren Agonie reflektiert
+	- äußere Hülle explosionsartig abgesprengt
+	- -> Stern leuchtet zu einer Supernova auf (kurzzeitig 10^9^Sonnenleuchtkräfte)
+	- Kerngebiet bleibt übrig
+
+### Massearme Sterne
+
+* bei Austritt aus Hauptreihe bereits relativ dichten Kern
+* keine Kontraktionsvergänge mehr möglich
+* Materie um Mittelpunkt des Sterns nicht mehr komprimirbar und verhält sich ncith mehr wie ideales Gas - Zustand wird als **entartet** bezeichnet
+* Elektronen entarteter Matiere beanspruchen gewisses Mindestvolumen
+* wird Volumen kleiner, dann Gegendruck (quantenmeschaniche Natur)
+* Sterne mit nur einer Sonnenmasse
+	- auch in ihm Heliumfusion, setzt schlagartig ein
+		* man spriht hier von Heliumflash (einige Sekunden 10^11^ Sonnenleuchtkräfte)
+		* gewaltige Energiemenge durch Sernhülle absorbiert und erst allmählich in Weltraum abgegeben -> keine merklichen Auswirkungen nach ausen
+	- Kerngebiet bleibt übrig
+	
+## 3. Endstadium
+* 
+
+### weißer Zwerg
+
+* Massenobergrenze: 1,4 Sonnenmassen
+
+### Neutronenstern
+
+* MAssenobergrenzen: 1,4-2,4 Sonnenmassen
+
+Ein Neutronenstern ist ein astronomisches Objekt, dessen wesentlicher und namensgebender Bestandteil Neutronen sind. Ein Neutronenstern stellt ein Endstadium in der Sternenentwicklung eines massereichen Sterns dar
+
+* Chandeskalrische Grenze wenn unter der grenze, dann weißer Zwerg, über SUpernova
+* Massegrenzen siehe andere Punkte
+* Arten:
+	- Pulsar (Elektromagnetische Wellen werden pulsförmig abgegeben)
+	- Magnetare (extremstarkes Magnetfeld)
+* durchschnittlich 20 km Durchmesser
+* Kollaps kann aufgehalten werden
+* SUpernovaexlṕlosion als Nachweis
+* Gravitationswellen als Nachweis
+* auffällige Neutrinostrahlung
+
+### stellares Schwarzes Loch
+
+* ab 2,4 Sonnenmassen
+
+## Cepheiden
+
+* Helligkeitsveränderlihce Sterne
+* die im Riesenstadium austretten können
+* Periodendauer der Helligkeitsverämderung liegt zw. 1-50 Tagen
+* über diese Periode kann die absolute Helligkeit berechnet werden 
+
+M(v)=-1,67-2,54*lg(P/1d)
+
+* mithilfe von scheinbarer und absoulter Helligkeit kann Entfernung berechnet werden
+
+
+# Milchstraße und andere Galaxien
+
+* Zeichnung siehe Photo Handy
+* Scheibe = Scheibe mit Spiralarmen
+* Zentrum (Sagittarius A Stern)
+* Sonne in linker Hälfte
+* Daten siehe Tafelwerk
+* Anzahl Geschätzt 200 Mrd. Sterne
+* Alter etwas geringer als Alter des Universums (13,5 - 13,8 Mrd. Jahre)
+* SOnne befindet sich im Orionarm
+* typische **Spiralgalaxy**
+
+## Objekte im Sonnensystem
+
+### Kugelsternhaufen
+
+* in der Halo
+* Durchmesser: 15 bis 350 ly
+* umfassen 10000 vis einige Mio. Sterne
+* Alter: 10 Mrd. Jahre
+* bestehen aus: alte und erkalltete Sterne, RR-Lyrae
+* Masse  entspricht einem Millionstel der Masse der Galaxy
+* Sterne im Zentrum stehen so nah beianander erscheinen als leuchtende Fläche
+* extrem exentrische Bahnen um Kern der Milchstraße
+* jahrmillionen lange Umlaufbahn
+* tretten dabei 2x in Scheibenebene ein geben dabei ihre Interstellare Materie ab -> keine mehr vorhanden -> keine Sternentstehung
+* keine O- und B-Sterne, Hauptreihe bricht bei 1M(Sonne) ab
+* unter Sternen auch Veränderliche vom Typ RR-Lyrae -> kann mit Perioden-Leuchtkraft-Beziehung Entfernung berechnen
+
+### offene Sternhaufen
+
+* lockre Sternansammlungen unregelmäßiger Gestalt
+* enthalten 10 bis 1000 Stellare Objekte
+* zufinden in der Ebene des Milchstraßensystems
+* Durchmesser: einige Lichtjahre
+* Klassifiziert nach:
+	- Konzentration der Hauptsterne
+	- Scheinbare Helligkeit der Hauptsterne
+	- Anzahl der Mitlglieder des Haufens
+* Alter: zw. 100 Mio 300 Mio.
+
+## Sternpopulation
+
+### Definition
+
+groesere Objekte die in eine, bestimmten Zeitintervall enstanden sind.. Sie bilden aehnliche raeujmliche Strukturen und weisen eine etwa gleiche chemische Zusammensetunge auf
+
+### Unterteilung
+
+1. Extreme Population (O- und B-Sterne, offene Sternhaufen)
+2. Aeltere Population I (a-Sterne, Riesen)
+3. Scheibenpopulation (Novae, Planetarische Nebel, helle Rote Riesen, Sterne im Kern des Milchstrasensystems
+4. Zwischenpopulation II (Mirasterne, Schnelllaeufer)
+5. Halo-Population II (Kugelsternhaufen, PR-Lyrae-Sterne, Unterzwerge)
+
+### Novae
+
+Eine Nova ist ein Helligkeitsausbruch in einem engen Doppelsternsystem aufgrund einer explosiven Zündung des Wasserstoffbrennens auf der Oberfläche eines Weißen Zwergs
+
+### planetarische Nebel
+
+astronomisches Objekt aus der Kategorie der Nebel, bestehend aus einer Huelle aus Gas und Plasma, das von einem alten Stern am Ende seiner Entwicklung abgestosen wurde
+
+### Mirasterne
+
+Stern, dessen Helligkeitsperiode zwischen 80 und 1 000 Tagen liegt
+
+### Schnelllaeufer
+
+Sterne mit grose Eigenbewegung
+
+### RR-Lyrae-Sterne
+
+pulsierende Riesensterne, typische Periode kleiner als 1 Tag
+
+## Entwicklung der Milchstrase
+
+* Ausgnagszustand muss sher ausgedehnte Gaswolke geringer Dichte gewesen sein
+* Urwolke zunaest aus groeseren materieverband geloest und damit mechnaisch abgeschlossenes System sein
+* schnelle Kontraktion dieser Protogalaxis unter Einfluss der eigenen Schwerkraft verhindert durch turbulente Bewegung im Wolkeninneren
+* innere Riebung und Zusammenstoese wandeln kin Energie der Wolkenteile in Waerme
+* da Summe der Drehimplse erhalten bleiben muss, Wolke dreht sich als Ganzes
+* durch geringe Dichte der Wolke konte entstandene Waerme abgestrahlt werden -> Kontraktion immer schneller
+* in Aequatorzone der Wolke Kontraktion durch Fliehkraft verhindert
+* -> Wolke kolabiert parralel zur Rotationsachse -> flacher Rotationsellipsoid
+* waehrend Kontraktionsphase werden dauernd Sterne gebildet
+* massereiche Sterne durchlaufen ihre Entwicklung sehr schnell -> sehr frue schwere Elemente an das interstellare Medium abgegeben, werden spaeter zur Bldung weiterer Sternengenerationen verwendet
+* dadurch nimmt Anteil an schweren elementen im interstellaren Medium immer mehr zu
+* je weiter die Abplattung des Systems, desto kleiner die Geschwindigkeitskomponenten  der neuen Sterne senkrecht zu r galaktischen Ebene, welche inen bei der Geburt aus der interstellaren Materie mitgegeben wurde
+* mit abnehmenden Alter liegt Bahn immermehr in galaktischer Ebene und immer kreisaehnlicher
+* nach uebergang des Systems in stationaernen Zustand bildeten sich Sterne der Scheibenpopulation und interstellare Materie sammelt sich in der galaktischen Ebene an
+* Dort lieferten weitere Sterngeburten die Sterne der jungen Population 1

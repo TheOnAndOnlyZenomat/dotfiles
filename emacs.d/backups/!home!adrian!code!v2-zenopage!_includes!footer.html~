@@ -1,0 +1,4 @@
+{% for item in site.data.footer %}
+  <a href="{{ item.link }}">{{ item.name }}</a>
+{% endfor %}
+<img src="https://512kb.club/images/green-team.svg">

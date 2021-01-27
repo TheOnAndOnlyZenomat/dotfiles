@@ -1,0 +1,36 @@
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgd997489">1. About Me</a></li>
+</ul>
+</div>
+</div>
+---
+title: "Zeno's Homepage"
+header: "Zeno's Homepage"
+description: "A webpage and blog for me, Zeno, a 17 year old dude interested in Linux, FOSS, selfhosting and other stuff."
+permalink: "/"
+layout: default
+---
+
+<div id="outline-container-orgd997489" class="outline-2">
+<h2 id="orgd997489"><span class="section-number-2">1</span> About Me</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+I am a 17 y/o guy living Germany. I am interested in tech, Linux, FOSS and selfhosting.
+</p>
+
+<p>
+I love tinkering around with my linux box and try to get away from big tech firms like Google, Microsoft and so on.
+</p>
+
+<p>
+For this I selfhost some services like Jellyfin, my mediaserver, a Matrix server so that I can chat with my family, my own blog and website, TinyTiny RSS and Wallabag.
+</p>
+
+<p>
+I am also thinking about transitioning to selfhosting my music, but that I am still figuring out.
+</p>
+</div>
+</div>

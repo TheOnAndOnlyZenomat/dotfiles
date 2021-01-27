@@ -1,0 +1,35 @@
+---
+layout: posts
+title: Reworking my blog
+author: Zeno
+excerpt: As you may have noticed I reworked my blog. Here is why and how.
+tags: ["Tech"]
+---
+
+<p>
+As some of you, if somebody even reads this^^, may have noticed, I reworked my blog and in this post I want to exmplain why and how I did that.
+</p>
+
+<p>
+To explain why we have to start at the beginning of my original site. At first I wrote everything by hand. My homepage and my blog. Everyhting in plain html and css. Because I did not always want to edit the html of the blog after I wrote an article I created a bash script to help me. It was rather rudimentary, but it did the job of adding posts to my blog. But if I wanted to remove a specific article… I was to lazy to implement that, so I switched my blog over to jekyll. Now I had a handwritten landing page and a blog managed by jekyll.
+</p>
+
+<p>
+For the theme for jekyll I <i>adapted</i> a theme called <a href="https://github.com/poole/lanyon">Lanyon</a>, which I found on the search for a nice theme. But, I did not like the colors, it just did not fit into my colorscheme, so I did what I do best and started hacking the shit out of CSS provided by the theme. And because I did not write anything myself in this theme I did not really have a clue what I had to do or how <b>anything</b> worked at all… (the same goes for jekyll to a certain extend)
+</p>
+
+<p>
+After some time I managed to get it to look how I wanted, but deep down I knew that this was not it.
+</p>
+
+<p>
+So cut to yesterday, <a href="https://kevq.uk/">Kev Quirk</a> posted an article on how to create a jekyll site from scratch. Inspired by this post I grab some water and some snacks, sat down on my PC and created a new folder named <code>v2-zenopage</code>. I loosely followed the guide by Kev, used the jekyll documentation, some referencing to code from other projects and low and behold, here we are.
+</p>
+
+<p>
+I worked on this the late afternoon till maybe midnight and I am pretty happy how it turned out. By building the site from scratch I now know how everything works under the hood and was able to easily implement my own CSS (btw, why does CSS have to suck so hard. I found it nearly impossible to get my footer to stay where it was supposed to…).
+</p>
+
+<p>
+And now I have a website and a blog, which work well together, are rather minimal, have one unified look and can easily be managed from one application. So do not be afraid of throwing one concept overboard and have an open mind to new possibilitys. And building from scratch is a very satisfiying feeling in the end. 
+</p>

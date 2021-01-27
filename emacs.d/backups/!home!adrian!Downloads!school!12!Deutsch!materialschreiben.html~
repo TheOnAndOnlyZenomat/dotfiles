@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Adrian Eichelbaum" />
+  <title>Materialgestuetztes schreiben argumentierender Texte</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Materialgestuetztes schreiben argumentierender Texte</h1>
+<p class="author">Adrian Eichelbaum</p>
+</header>
+<h1 id="aufgabe-1-b">Aufgabe 1 b)</h1>
+<ul>
+<li>Sarkasmus (Z. 1 f.)</li>
+<li>rethorische Fragen (Z. 4 ff.)</li>
+<li>Lesereinbindung (Z. 8)</li>
+<li>ironie (Z. 8)</li>
+<li>direkte Wertung (Z. 11)</li>
+<li>correctio (Z. 9-10 f.)</li>
+</ul>
+<h1 id="aufgabe-3">Aufgabe 3</h1>
+<p>generell Siehe AH S. 98</p>
+<h2 id="b-begruendung">b) Begruendung</h2>
+<ul>
+<li>xweites, da nennt gruende, thema und fuer wen man den text schreibt</li>
+<li>drittes, da Thema, Argument, fuer wen man den Text schreibt</li>
+</ul>
+<h2 id="c">c)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Material</th>
+<th>Pro</th>
+<th>Kontra</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>M1: Undine Kramer uerbe Sprachwissenschaftler Peter von Polenz</strong></td>
+<td>- Verstehen nicht mehr einfach moeglich</td>
+<td>- Verstehhilfe noetig und moeglich</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- vlt. schon zu Goethes Zeit unverstaendlich</td>
+<td>- Goethewoerterbuch ist vorhanden</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Goethe hat ein so breites Wortspektrum durch DInge in seinem Leben, die heute, vorallem nicht durch schueler, nachgeahmt werden kann</td>
+<td>- auch Duden hilft gut weiter</td>
+</tr>
+<tr class="even">
+<td><strong>M2: Interview mit Ralf Beekveldt</strong></td>
+<td>- mehr als 20 Mio Menschen Schwierigkeit am Lesen</td>
+<td>- einiges von Orgianl geht verloren</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- besser es geht etwas verloren, als es gar nicht zu lesen</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- durch vereinfachung kann auch neuer Zauber entstehen</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>M3: Beispiele</strong></td>
+<td>- Vereinfachungen sind schon Realtiaet -&gt;</td>
+<td>- historische Besonderheiten mit sprachlichen besonderheiten gehen unter</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- auch von renomiertenquellen (duden)</td>
+<td>- wirkt manchmal bissl uebertrieben</td>
+</tr>
+<tr class="odd">
+<td><strong>M4: Sandra Kegel, Kommentar</strong></td>
+<td>- Erleichterung im Alltag</td>
+<td>- "Infantilisierung von Sprache" Z. 37</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- ermoeglicht Nichtmuttersprachler und Lese-, Rechtchreibschaeche betroffene die teilnahme am oeffentlichen Diskurs</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

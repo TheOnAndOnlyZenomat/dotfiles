@@ -1,0 +1,8 @@
+#!/bin/sh
+
+title=$(date "+%Y-%M-%d"-=$1)
+
+echo $title
+
+#emacs /home/adrian/code/zenopage/blog/_drafts/
+
