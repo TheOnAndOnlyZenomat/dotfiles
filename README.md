@@ -12,6 +12,8 @@ It includeds horizon themed:
 * zathura
 * spotify
 
+* also my polybar config for my dwm-anybar
+
 It also includes my custom scripts for my statusbar, including:
 
 * a clock
