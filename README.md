@@ -4,9 +4,9 @@ This are the dotfiles for my horizon dark themed dwm setup.
 
 It includeds horizon themed:
 
-* dwm
+* dwm (with the anybar patch) - can be found on my github
 * dmenu
-* st
+* st - can be found on my github
 * emacs (emacs changes to a light theme based on time of the day tho)
 * dwmblocks (including systray and support for colored emojis)
 * zathura
