@@ -1,0 +1,21 @@
+#+begin_export html
+---
+layout: posts
+title: The Configuration Procrastination
+author: Zeno
+excerpt: Here I want to talk about the state of my Linux config and why this state bugs me
+tags: ["Tech", "Linux"]
+---
+#+end_export
+
+I am very content with my Linux system configuration. This includes my window manager (dwm), my terminal (st), my bar (dwmblocks) and some other stuff. And in it of it self, that is a really good thing. I have an environment, which I crafted to my needs, in which I feel comfortable.
+
+The problem with this is, that I really love tinkering with systems and software. And if there is nothing to tinker with, because it is already is how I like it, that is a problem. Then I just sit in front of my PC and do not know what to do...
+
+I have recently taken on Emacs as my main heavy-hitter editor, I also use Emacs to publish this blog btw, and it was so fun finally tinkering with configs again and customizing it to my liking.
+
+I think the magic of hacking on configs comes from the fact, that you can make your computer exactly do what you want it to do. This is also one of the reasons, why I use Linux. I want to be able to tell my PC what to do and not the other way around. I also love getting deep into it, researching, trying and failing, till it finally works. One of the most rewarding feelings ever. This is not mutually exclusive to configs, but also generally coding and selfhosting for me.
+
+Another problem I have, which fits more to the title, is, that I sometimes, more and more in the recent past, do not have the inspiration, not the will/motivation to do what I once enjoyed so much. I do not know, why this happens, it is just something I observe. I think: "Yeah, that's cool, let's try this" and then never do it. Maybe because I am afraid to fuck up my config, or because I just am to comfortable in my current setup so I do not have to motivation to do it. I wanted to hop into BSPWM again, because of [[https://fosstodon.org/@sotolf][Sotolf]], a fellow Mastodon user, who sometimes posts about his BSPWM config, and I wanted to try to replace my statusbar with polybar or lemonbar, because it gives me a bit more stylistic freedom then dwmblocks, but I never did it.
+
+BUT, at the moment i still tinker around with Emacs, even though it is not my entire system, it is something. And I have fun with that. Maybe I will write a post about my Emacs or how I publish to this blog with my Emacs one day.

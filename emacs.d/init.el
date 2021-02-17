@@ -8,8 +8,7 @@
 (tooltip-mode -1)           ; Disable tooltips
 (set-fringe-mode 10)        ; Give some breathing room
 (menu-bar-mode -1)          ; Disable the menu bar
-(setq truncate-partial-width-windows nil)
-(set-default 'truncate-lines t)
+(setq-default truncate-lines t)
 
 (setq-default cursor-type 'bar)
 
@@ -19,7 +18,7 @@
 (dolist (mode '(shell-mode-hook))
 (add-hook mode (lambda() (display-line-numbers-mode 0))))
 
-(set-face-attribute 'default nil :font "Tamzen 12")
+(set-face-attribute 'default nil :font "Terminus 14")
 (load-theme 'doom-horizon t)
 
 (add-to-list 'load-path "~/.emacs.d/custom")
@@ -54,6 +53,25 @@
          :html-extension "html"
          :body-only t
          )))
+
+(defun new-buffer-new-window ()
+  "Creates a new buffer in a new window"
+  (interactive)
+  (let ((buffer (generate-new-buffer "Untitled")))
+    (set-buffer-major-mode buffer)
+    (display-buffer buffer '(display-buffer-pop-up-window . nil))))
+
+(global-set-key (kbd "C-c n") #'new-buffer-new-window)
+
+(use-package rust-mode
+)
+
+(add-hook 'rust-mode-hook
+    (lambda () (setq indent-tabs-mode nil)))
+
+(setq rust-format-on-save t)
+
+(define-key rust-mode-map (kbd "C-c C-c") 'rust-run)
 
 (require 'package)
 
@@ -97,7 +115,9 @@
 
 (use-package doom-modeline
   :init (doom-modeline-mode 1)
-  :custom ((doom-modeline-height 15)))
+  :custom ((doom-modeline-height 15)
+  (doom-modeline-minor-modes 1))
+)
 
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
@@ -117,12 +137,17 @@
     )
   )
 
-(use-package org-bullets
-  )
+(use-package org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 (use-package ox-pandoc
   :defer 10)
+
+(use-package wc-mode)
+(add-hook 'org-mode-hook (lambda () (wc-mode 1)))
+(setq wc-modeline-format "[Words: %tw  Delta: %w Goal: %gw]")
+
+(add-hook 'org-mode-hook (lambda () (flyspell-mode 1)))
 
 (use-package ivy
   :diminish
@@ -159,6 +184,7 @@
              (expand-file-name "~/.emacs.d/custom/edwina"))
 
 (use-package edwina
+  :diminish
   :config
   (setq display-buffer-base-action '(display-buffer-below-selected))
   (edwina-setup-dwm-keys)
@@ -173,3 +199,7 @@
   ([remap describe-command] . helpful-command)
   ([remap describe-variable] . counsel-describe-variable)
   ([remap describe-key] . helpful-key))
+
+(use-package elpher
+)
+(add-hook 'elpher-mode-hook (lambda () (display-line-numbers-mode 0)))

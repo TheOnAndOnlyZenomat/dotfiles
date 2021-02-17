@@ -1,4 +1,4 @@
-#+TITLE: Emacs Configuration
+#+Title: Emacs Configuration
 #+AUTHOR: Zeno
 #+STARTUP: shownone
 #+PROPERTY: header-args:emacs-lisp :tangle /home/adrian/.emacs.d/init.el
@@ -11,8 +11,7 @@
 #+end_src
 
 * UI Customization
-
-Sets a custom scratch-buffer message and disables some UI elements to make emacs more minimal in appearence.
+Sets a custom scratch-buffer message and disables some UI elements to make emacs more minimal in appearance
 
 #+BEGIN_SRC emacs-lisp
 (setq initial-scratch-message ";; Welcome back, Zeno")
@@ -22,8 +21,7 @@ Sets a custom scratch-buffer message and disables some UI elements to make emacs
 (tooltip-mode -1)           ; Disable tooltips
 (set-fringe-mode 10)        ; Give some breathing room
 (menu-bar-mode -1)          ; Disable the menu bar
-(setq truncate-partial-width-windows nil)
-(set-default 'truncate-lines t)
+(setq-default truncate-lines t)
 #+END_SRC
 
 Set the cursor to a bar
@@ -51,7 +49,7 @@ Show line numbers, highlight current line
 ** Set font and theme
 
 #+BEGIN_SRC emacs-lisp
-(set-face-attribute 'default nil :font "Tamzen 12")
+(set-face-attribute 'default nil :font "Terminus 14")
 (load-theme 'doom-horizon t)
 #+END_SRC
 
@@ -112,23 +110,10 @@ I publish my blog using Jekyll and I want to be able to publish using EMACS's or
 (setq org-publish-project-alist
       '(("zenopage" ;; my blog project (just a name)
          ;; Path to org files.
-         :base-directory "~/code/zenopage/blog/_drafts/"
+         :base-directory "~/code/zenopage/_drafts/"
          :base-extension "org"
          ;; Path to Jekyll Posts
-         :publishing-directory "~/code/zenopage/blog/_posts/"
-         :recursive t
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4
-         :html-extension "html"
-         :body-only t
-	 )))
-(setq org-publish-project-alist
-      '(("zenopage-v2" ;; my blog project (just a name)
-         ;; Path to org files.
-         :base-directory "~/code/v2-zenopage/_drafts/"
-         :base-extension "org"
-         ;; Path to Jekyll Posts
-         :publishing-directory "~/code/v2-zenopage/_posts/"
+         :publishing-directory "~/code/zenopage/_posts/"
          :recursive t
          :publishing-function org-html-publish-to-html
          :headline-levels 4
@@ -136,7 +121,54 @@ I publish my blog using Jekyll and I want to be able to publish using EMACS's or
          :body-only t
          )))
 #+end_src
+* Custom Code Snippets
+** Create new buffer in a new frame
+creates a function, which creates a new bufer in a new frame and assign it to =C-c n=
+#+begin_src emacs-lisp
+(defun new-buffer-new-window ()
+  "Creates a new buffer in a new window"
+  (interactive)
+  (let ((buffer (generate-new-buffer "Untitled")))
+    (set-buffer-major-mode buffer)
+    (display-buffer buffer '(display-buffer-pop-up-window . nil))))
+
+(global-set-key (kbd "C-c n") #'new-buffer-new-window)
+#+end_src
+* Rust Environment
+** Rust Major Mode
+#+begin_src emacs-lisp
+(use-package rust-mode
+)
+#+end_src
+
+** Spaces rather than tabs to indent
+Rust uses spaces to indent, rather than tabs, so we disable the use of tabs for indentation
+
+#+begin_src emacs-lisp
+(add-hook 'rust-mode-hook
+    (lambda () (setq indent-tabs-mode nil)))
+#+end_src
+
+** Code formatting on save
+The =rust-format-buffer= function will format your code with =rustfmt= if installed. By default, this is bound to =C-c C-f=.
+The variable =rust-format-on-save= enables automatic formatting on save.
+
+#+begin_src emacs-lisp
+(setq rust-format-on-save t)
+#+end_src
+
+** Running / testing / compiling code
+The =rust-run=, =rust-test=, =rust-compile= and =rust-check= functions shell out to Cargo to run, test, build and check your code. Under the hood, these use the standard Emacs compile function.
+
+These are not bound by default. To bind these to keyboard shortcuts, you can use the following in your init.el:
+
+#+begin_src emacs-lisp
+(define-key rust-mode-map (kbd "C-c C-c") 'rust-run)
+#+end_src
+
 * Packages
+#+begin_src 
+#+end_src
 ** Package setup
 Prepare the repos and other stuff
 
@@ -224,7 +256,9 @@ Change the modeline to the one of doom emacs, because I think it is more beautif
 #+begin_src emacs-lisp
 (use-package doom-modeline
   :init (doom-modeline-mode 1)
-  :custom ((doom-modeline-height 15)))
+  :custom ((doom-modeline-height 15)
+  (doom-modeline-minor-modes 1))
+)
 #+end_src
 
 ** Rainbow-delimiters
@@ -275,8 +309,7 @@ Activate the package on certain file extensions. If configs are to be added, jus
 Change the headline bullet points to icons, is pretty
 
 #+begin_src emacs-lisp
-(use-package org-bullets
-  )
+(use-package org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 #+end_src
 
@@ -289,6 +322,21 @@ Add pandoc export to org files.
   :defer 10)
 #+end_src
 
+*** word-count-mode
+#+begin_src emacs-lisp
+(use-package wc-mode)
+(add-hook 'org-mode-hook (lambda () (wc-mode 1)))
+(setq wc-modeline-format "[Words: %tw  Delta: %w Goal: %gw]")
+#+end_src
+
+*** On the fly spell checking
+
+This enables on the fly spell checking with flyspell and hunspell. I set this up for org mode, because it is the most usefull there for me.
+To change the language =M-x ispell-change-dictonary=
+
+#+begin_src emacs-lisp
+(add-hook 'org-mode-hook (lambda () (flyspell-mode 1)))
+#+end_src
 ** Ivy/Counsel
 
 An completion framework for promps with fuzzyfinding and highlighting and more information.
@@ -346,6 +394,7 @@ A nice writing environment for emacs
               (expand-file-name "~/.emacs.d/custom/edwina"))
 
  (use-package edwina
+   :diminish
    :config
    (setq display-buffer-base-action '(display-buffer-below-selected))
    (edwina-setup-dwm-keys)
@@ -371,3 +420,10 @@ Helpful is an alternative to the built-in Emacs help that provides much more con
 ;; eval: (add-hook 'after-save-hook (lambda ()(if (y-or-n-p "Reload?")(load-file user-init-file))) nil t)
 ;; eval: (add-hook 'after-save-hook (lambda ()(if (y-or-n-p "Tangle?")(org-babel-tangle))) nil t)
 ;; End:
+** Elpher
+A gemeni/gopher client
+
+#+begin_src emacs-lisp
+(use-package elpher
+)
+#+end_src

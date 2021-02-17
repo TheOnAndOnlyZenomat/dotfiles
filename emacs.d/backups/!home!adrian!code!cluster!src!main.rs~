@@ -1,0 +1,64 @@
+use std::io::{stdin, stdout, Read, Write};
+use std::thread; //these two line to sleep
+use std::time::Duration;
+use termion::async_stdin;
+use termion::event::Key;
+use termion::input::TermRead;
+use termion::raw::IntoRawMode;
+use termion::terminal_size;
+extern crate termion;
+
+fn counter_oneit(mut counter: u128, mut multiplier: u128) -> u128 {
+    //Increases the counter for one iteration
+    counter = counter + multiplier;
+    counter //return the counter
+}
+
+fn shop(key: char, mut counter: u128, mut multiplier: u128) -> (u128, u128) {
+    let mut add: u128 = 0;
+    match key {
+        '1' => add = if counter >= 100 { 10 } else { 0 },
+        '2' => add = 20,
+        _ => {}
+    }
+    multiplier = multiplier + add;
+    (multiplier, counter)
+}
+
+fn main() {
+    // main display function
+    let mut stdin = async_stdin().keys();
+    let mut stdout = stdout().into_raw_mode().unwrap();
+    let (termwidth, termheight) = terminal_size().unwrap(); //assigns the touple terinalwidth, terminalhight to the width and height of the terminal
+    let mut counter: u128 = 1;
+    let mut multiplier: u128 = 1; // make mutable later, because of shopping
+    let multiplierlength = multiplier.to_string().chars().count() as u16; // converts the multiplier u128 to a string, gets the chars, counts them and stores them as a u16, if multiplierlength is to big for a u16 it gets truncated
+
+    // Displayloop
+    loop {
+        counter = counter_oneit(counter, multiplier);
+        // this println prints the total number of points and the delta
+        writeln!(
+            stdout,
+            "{}{}Total: {}{}Delta: +{}",
+            termion::clear::All,         //clears the terminal screen
+            termion::cursor::Goto(1, 1), // positions the cursor at column 1, line 1, prints the points in the top left corner
+            counter,
+            termion::cursor::Goto(termwidth - (8 + multiplierlength), 1), // postions the cursor at column 80, line 1, prints the delta in the top right
+            multiplier
+        )
+        .unwrap();
+
+        if let Some(c) = stdin.next() {
+            match c.unwrap() {
+                Key::Char('a') => counter = counter + 1,
+                Key::Char('q') => break,
+                Key::Char('1') => (multiplier, counter) = shop('1', counter, multiplier),
+                //Key::Char('2') => (multiplier, counter) = shop('2', counter, multiplier),
+                _ => {}
+            }
+        }
+        stdout.flush().unwrap();
+        thread::sleep(Duration::from_millis(1000)); // sleep for one second
+    }
+}

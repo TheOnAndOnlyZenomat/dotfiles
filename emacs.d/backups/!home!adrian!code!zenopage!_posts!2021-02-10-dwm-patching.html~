@@ -1,0 +1,37 @@
+---
+layout: posts
+title: DWM Patching
+author: Zeno
+excerpt: Yesterday I redid my dwm config and patches, here is how it went.
+tags: ["Tech", "Linux", "Ricing"]
+---
+
+<p>
+First of all, sorry for the long break, just did not find the time or motivation to write something, tho I have collected a few ideas about what to write.
+</p>
+
+<p>
+The irony, the first post after the break is none of those ideas ^^
+</p>
+
+<p>
+I want to write about my Window Manager today. For those who do not know what a Window Manager (WM) is, it is basically the program, which arranges the windows on your screen.
+</p>
+
+<p>
+My WM at the moment and for the foreseeable future is dwm, which stands for dynamic window manager. It is part of the suckless software suite, which I quite enjoy because if it's simplicity and do it yourself approach, tho I can see, that this is not for everybody, especially because you have to patch the source code to get to a state where it is a comfortable experience.
+</p>
+
+<p>
+Software from the suckless guys include dwm, st, dmenu and the more or less official dwmblocks. My dwm, dwmblocks and st builds I have patched my self, for dmenu I use the version from Distrotube with a few color changes to match my theme.
+</p>
+
+<p>
+So let's get to the matter at hand. I have used dwm for a longer time and I really like how it flows and how I configured it. The only thing that bugged me a bit recently was, that I could only use the built in statusbar, together with something like dwmblocks to make it a bit easier to manage. But one time I scrolled through the patches on the suckless website and found the anybar patch, which caught my attention. I wanted to also have support for polybar, which also required the IPC patch, which is quite extensive. I also wanted to redo my dwm config for some time now, so I decided, that I will go for it. I sit down one evening and start the process. I take a look at my current config, which patches I have applied and which of those I want to keep and make my selection. The journey of that first attempt you can see on my <a href="https://fosstodon.org/@Zeno/105702728144197943">mastdon page</a>. To summarize it, I applied all the patches and it broke.
+</p>
+
+<p>
+It first would not start at all, I fiddled around with the dwm code and my polybar config and somehow got it to a point where it would launch, but crash if I opened a program. At this point it was already really late, so I went to bed. In the morning I planned to do some school work, but instead of doing that I got distracted by this issue. So it started at the beginning, but instead of applying the anybar patch at the beginning I applied it as the second last, before the IPC patch, and kept the other statusbar patches, like to colorbar patch, for the end, and it somehow worked.
+</p>
+
+<img src="/assets/images/2021-02-10-dwm-patching/2021-02-10-005305_1919x1079_scrot.png" alt="dwm pic" width="640" height="360"> 

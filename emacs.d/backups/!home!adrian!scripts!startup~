@@ -1,0 +1,27 @@
+#!/bin/sh
+
+#hsetroot -solid \#b8ba91 &
+~/.fehbg &
+/usr/bin/unclutter -b &
+picom -b
+dunst &
+redshift-gtk -l 51.33962:12.37129 &
+xmodmap -e "keycode 133 = Caps_Lock" &
+setxkbmap -option caps:super &
+mpd &
+/home/adrian/scripts/statusbar/posture.sh &
+DESKTOP_SESSION="dwm"
+
+if [ "$DESKTOP_SESSION" == "dwm" ]; then
+	sxhkd &
+	pkill -RTMIN+15 dwmblocks
+	if [ $(pgrep dwmblocks) > /dev/null ];then
+		killall dwmblocks
+	fi
+	dwmblocks &
+fi
+
+if [ "$DESKTOP_SESSION" == "bspwm" ]; then
+	sxhkd -c /home/adrian/.config/sxhkd/bspkdrc &
+	/home/adrian/.config/polybar/launch_polybar.sh &
+fi

@@ -237,8 +237,7 @@ SIDE is passed to `split-window' to position the stack area."
 (defun edwina-clone-window ()
   "Clone selected window."
   (interactive)
-  ;;(split-window-below)
-  (find-file-other-window)
+  (split-window-below)
   (edwina-arrange))
 
 (defun edwina-delete-window (&optional window)
@@ -258,6 +257,14 @@ SIDE is passed to `split-window' to position the stack area."
     (let ((pane (edwina-pane (selected-window))))
       (edwina-delete-window)
       (edwina-arrange (cons pane (edwina-pane-list))))))
+
+(defun new-buffer-frame ()
+  "Creates a new buffer in a new frame"
+  (interactive)
+  (let ((buffer (generate-new-buffer "untitled")))
+    (set-buffer-major-mode buffer)
+    (display-buffer buffer '(display-buffer-pop-up-frame . nil)))
+  (edwina-arrange))
 
 (defvar edwina-mode-map
   (let ((map (make-sparse-keymap))
@@ -288,6 +295,7 @@ SIDE is passed to `split-window' to position the stack area."
     (define-key prefix-map (kbd "<return>") 'edwina-zoom)
     (define-key prefix-map (kbd "c") 'edwina-clone-window)
     (define-key prefix-map (kbd "C-c") 'edwina-clone-window)
+    (define-key prefix-map (kbd "C-c n") 'new-buffer-frame)
     (define-key map edwina-keymap-prefix prefix-map)
     map)
   "Keymap for command `edwina-mode'.")

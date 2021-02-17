@@ -17,3 +17,9 @@ mpc search Track blinding
 ls
 ls -l
 exit
+sudo make clean install
+cd ..
+jekyll serve
+bundle exec jekyll serve
+zsh
+exit

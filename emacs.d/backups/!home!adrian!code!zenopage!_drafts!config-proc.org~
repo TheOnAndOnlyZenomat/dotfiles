@@ -1,0 +1,13 @@
+#+begin_export html
+---
+layout: posts
+title: The Configuration Procrastination
+author: Zeno
+excerpt: Here I want to talk about the state of my linux config and why this state bugs me
+tags: ["Tech", "Linux"]
+---
+#+end_export
+
+I am very content with my Linux system configuration. This includes my window manager (dwm), my terminal (st), my bar (dwmblocks). And in it of it self, that is a really good thing. I have an environment, which I crafted to my needs, in which I feel comfortable.
+
+The problem with this is, that I realy love tinkering with systems and software.

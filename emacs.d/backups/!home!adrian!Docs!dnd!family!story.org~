@@ -1,4 +1,89 @@
-+ jeder findet sich in einer eigenen Gefaengnisszell
+#+TITLE: DnD Family
+
+#+begin_export html
+<style>
+:root {
+    --bg-col: #1c1e26;
+    --fg-col: #ffffff;
+    --accent: #e93c58;
+    --sec-accent: #e3e6ee
+}
+
+body, html {
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg-col);
+    color: var(--fg-col);
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+a, a:visited {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--sec-accent);
+}
+
+h1 {
+    color: var(--accent)
+}
+
+h2 {
+    color: var(--accent);
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.heading {
+    text-align: left;
+}
+
+.bar {
+    text-align: left;
+}
+
+.about {
+    text-align: left;
+}
+
+.blog {
+    text-align: left;
+}
+
+p.meta {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--sec-accent);
+    margin-top: -1em;
+}
+
+blockquote {
+  font: 14px/22px normal helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+} 
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin: 0px auto;
+  width: 100%;
+  text-align: center;
+}
+</style>
+#+end_export
+
+* Story
++ jeder findet sich in einer eigenen Gefaengnisszelle
 + Moosig, raue Steinwaende
 + an den Waenden hier und da Metalketten
 + etwas klam
@@ -9,4 +94,32 @@
 + hoert auf dem gang schritte
 + waerter kommt zu jeden von euch un reicht euch einen brief
 Brief:
-Wenn ihr hier raus wollt, stellt euch schalfend diese nacht. die tuer wird offen stehen und ihr seid frei zu gehen. bevor ihr geht kommt wartet am tor, und hoert mich an. diesen gefallen hab ich mir verdient.
+"Wenn ihr hier raus wollt, stellt euch schalfend diese nacht. die tuer wird offen stehen und ihr seid frei zu gehen. bevor ihr allerdings verschwindet, kommt wartet am tor, und hoert mich an. diesen gefallen hab ich mir verdient."
+
++ wenn sie raustreten sehen sie sich gegenseitig, *vorstellung*
++ langer dunkler gang mit anderen Zellen links und rechts auserhalb eurer zelle
++ vor eurer Zelle steht eurer Rucksack mit euren Sachen
++ seht ein flackern von fackeln neben einer tuer
++ wenn sie hindurchgehen, lange treppe nach open, spaerlich von fackeln erleuchtet
++ oben angekommen sehehn sie zwei wachen an der seite an einem tisch sitzen
++ spieler muessen kaempfen, oder sie haben eine echt coole idee
+https://imgur.com/a/aO8yx infantryman als gegner
+
++ tretten aus tuer
++ stehen in Burghof, um sie drumrum mauern hier und da ein erker, brunnen in der mitte, von blumenbeeten gesaeumt, hier und da kisten, und hecken
++ wachen patroulieren aber, auf je gegenueberliegenden seiten laeuft ein trupp aus zwei wachen, *stealth checks*
++ auf anderer seite ein groses holztor, mit einer kleineren pforte
++ wenn sie durch sind, koennen sie sich entscheiden kurz zu warten
++ wenn sie warten kommt eine person auf der strase nach oben gelaufen, in einem mantel gehuellt
++ als er sie erreich setzt er kapuze ab
++ zum vorschein kommt eine Frau, die euch leicht anlaechelt
+#+begin_quote
+Hallo ihr, mein Name ist Thalia.
+#+end_quote
+
+* Char-DB
+** Thalia
+*** Aussehen
+  + 1,70m
+  + wellige, blonde Haare
+  + rundes Gesicht

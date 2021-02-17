@@ -1,0 +1,10 @@
+#+begin_export html
+---
+layout: posts
+title: My little adventure with Rust
+author: Zeno
+excerpt: I've recently taken on writing a little clicker game in Rust, as a learning project
+tags: ["Coding", "Rust", "Tech"]
+---
+#+end_export
+
